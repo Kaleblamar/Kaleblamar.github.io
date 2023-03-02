@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* min-height: 100%; */
+}
+body {
+  font-family: "orbitron", sans-serif;
+  background-color: hsl(224, 32%, 12%);
+  background-image: conic-gradient(
+      from 0deg at 50% 50%,
+      blue,
+      purple,
+      purple,
+      blue
+    ),
+    url(./Images/me\ no\ background.png);
+  background-blend-mode: overlay, overlay;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.317);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  position: relative;
+  font-size: 14px;
+
+  /* border-bottom: 3px solid blue; */
+}
+nav ul li a::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(338, 70%, 55%);
+  transition: 300ms ease-in-out;
+  /* transform-origin: left; */
+  transform: scale(0);
+}
+nav ul li a:hover::after {
+  transform: scale(1);
+  /* transform-origin: left; */
+}
+
+nav a:hover {
+  color: hsl(338, 70%, 55%);
+}
+
+.logo {
+  border-radius: 50%;
+  padding: 5px;
+  color: red;
+  background-color: rgb(4, 33, 248);
+  /* background-color: hsl(183, 70%, 62%); */
+  font-weight: bold;
+}
+.graphic {
+  padding: 10px;
+  color: hsl(338, 70%, 55%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+h1 span {
+  color: hsl(183, 70%, 62%);
+}
+.sideBar {
+  min-height: 100%;
+  padding: 40px;
+  /* border-right: 3px solid white; */
+  text-align: center;
+  width: 35%;
+  /* background-color: rgba(18, 17, 17, 0.551); */
+  color: whitesmoke;
+  line-height: 2.5;
+  font-family: sans-serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
