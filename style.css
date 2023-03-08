@@ -129,7 +129,7 @@ h1 span {
 .hamburgerContainer:hover .hamburger2 {
   transform: translateX(-15px);
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   body {
     background-size: cover;
   }
