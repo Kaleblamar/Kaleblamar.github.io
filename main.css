@@ -364,6 +364,7 @@ nav a:hover {
     transform: rotateX(40deg) translateZ(50px);
     z-index: 1;
     line-height: 2;
+    margin: 0 auto;
   }
   #subHeading {
     color: white;
@@ -373,6 +374,7 @@ nav a:hover {
     transform-style: preserve-3d;
     transform: rotateX(40deg) translateZ(50px);
     z-index: 1;
+    margin: 150px auto;
   }
 
   nav {
