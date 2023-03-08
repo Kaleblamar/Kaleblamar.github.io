@@ -24,6 +24,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
+  /* background-image: url(./Images/Earth.jpg);
+  background-size: cover;
+  background-position: center; */
 }
 nav {
   display: flex;
