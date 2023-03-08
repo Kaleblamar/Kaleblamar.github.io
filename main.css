@@ -348,6 +348,18 @@ h1 {
 } */
 
 @media (min-width: 320px) and (max-width: 800px) {
+  .hero {
+    background-image: url(./Images/Earth.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  h1 {
+    text-shadow: none;
+  }
+  #subHeading {
+    text-shadow: none;
+  }
+
   nav {
     flex-direction: column;
     gap: 15px;
@@ -384,11 +396,14 @@ h1 {
     cursor: pointer;
   }
   #layer1 {
+    display: none;
     /* object-fit: fill; */
   }
   #layer2 {
-    object-fit: contain;
+    display: none;
+    /* object-fit: contain; */
   }
   #stars-moon {
+    display: none;
   }
 }
