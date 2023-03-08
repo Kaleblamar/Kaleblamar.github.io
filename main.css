@@ -358,6 +358,7 @@ nav a:hover {
     perspective: 2000px;
   }
   h1 {
+    font-size: 22px;
     color: white;
     text-shadow: 8px 8px 12px black;
     transform-style: preserve-3d;
@@ -367,6 +368,7 @@ nav a:hover {
     margin: 0 auto;
   }
   #subHeading {
+    font-size: 17px;
     color: white;
     text-shadow: 8px 8px 12px black;
     padding: 20px;
