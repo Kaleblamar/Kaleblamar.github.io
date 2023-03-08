@@ -360,16 +360,17 @@ h1 {
     color: white;
     text-shadow: 4px 4px 6px black;
     transform-style: preserve-3d;
-    transform: rotateX(45deg) translateZ(10px);
+    transform: rotateX(55deg) translateZ(10px);
     z-index: 1;
+    line-height: 2;
   }
   #subHeading {
     color: white;
     text-shadow: 4px 4px 6px black;
     padding: 20px;
-    line-height: 1.2;
+    line-height: 2;
     transform-style: preserve-3d;
-    transform: rotateX(45deg) translateZ(10px);
+    transform: rotateX(55deg) translateZ(10px);
     z-index: 1;
   }
 
