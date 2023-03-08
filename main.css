@@ -38,6 +38,7 @@ body {
   z-index: -1;
   /* transform-style: preserve-3d; */
   /* transform: translateZ(-200px) scale(2); */
+  perspective: 100px;
 }
 
 nav {
@@ -47,11 +48,11 @@ nav {
   padding: 20px;
   /* background-color: rgba(0, 0, 0, 0.312); */
   font-size: 14px;
-  position: relative;
+  /* position: relative; */
   z-index: 2;
   /* test */
   position: fixed;
-  z-index: 999;
+  /* z-index: 999; */
   background-color: hsl(224, 32%, 12%);
   background-image: conic-gradient(
     from 0deg at 50% 50%,
@@ -133,12 +134,12 @@ nav a:hover {
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 25px;
   font-family: "orbitron", sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 250px;
   position: absolute;
   top: 0;
@@ -146,19 +147,20 @@ h1 {
   right: 0;
   left: 0;
   /* margin: auto; */
-  text-shadow: 10px 10px 25px rgb(251, 157, 4), -10px 10px 25px rgb(254, 171, 3),
-    -10px -10px 25px rgb(252, 182, 3), 10px -10px 25px rgb(246, 129, 3);
+  text-shadow: 2px 2px 4px white;
   z-index: -1;
   opacity: 1;
   transition: opacity 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateX(55deg) translateZ(10px);
 }
 #subHeading {
-  font-size: 1rem;
+  font-size: 20px;
   font-family: "orbitron", sans-serif;
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 350px;
   /* test */
   position: absolute;
@@ -166,13 +168,13 @@ h1 {
   bottom: 0;
   right: 0;
   left: 0;
-  /* transform-style: preserve-3d; */
-  text-shadow: 10px 10px 25px rgb(251, 157, 4), -10px 10px 25px rgb(254, 171, 3),
-    -10px -10px 25px rgb(252, 182, 3), 10px -10px 25px rgb(246, 129, 3);
-  /* transform: translateZ(0px); */
-  z-index: -1;
+  text-shadow: 1px 1px 2px white;
+  /* z-index: -1; */
   opacity: 1;
   transition: opacity 1.5s ease-in-out;
+  transform-style: preserve-3d;
+  transform: rotateX(60deg) translateZ(10px);
+  line-height: 1.5;
 }
 .projects {
   /* background-color: hsl(224, 32%, 12%);
@@ -355,13 +357,15 @@ h1 {
     perspective: 100px;
   }
   h1 {
-    text-shadow: none;
+    color: white;
+    text-shadow: 4px 4px 6px black;
     transform-style: preserve-3d;
     transform: rotateX(45deg) translateZ(10px);
     z-index: 1;
   }
   #subHeading {
-    text-shadow: none;
+    color: white;
+    text-shadow: 4px 4px 6px black;
     padding: 20px;
     line-height: 1.2;
     transform-style: preserve-3d;
@@ -402,7 +406,8 @@ h1 {
   }
   .hamburger {
     display: block;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: var(--teal);
   }
   .hamburgerContainer:hover {
     cursor: pointer;
