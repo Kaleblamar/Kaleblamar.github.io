@@ -355,7 +355,7 @@ nav a:hover {
     background-size: cover;
     background-position: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     perspective: 2000px;
   }
   h1 {
