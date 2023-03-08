@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow-y: auto;
+  overflow: auto;
 }
 body {
   background-color: black;
@@ -24,6 +24,7 @@ body {
     blue
   ); */
   background-blend-mode: multiply;
+  /* min-height: 100vh; */
 }
 
 .hero {
@@ -110,16 +111,14 @@ h1 {
   text-align: center;
   color: white;
   margin-top: 250px;
-  /* test */
   position: absolute;
-  top: 0px;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  /* transform-style: preserve-3d; */
+  /* margin: auto; */
   text-shadow: 10px 10px 25px rgb(251, 157, 4), -10px 10px 25px rgb(254, 171, 3),
     -10px -10px 25px rgb(252, 182, 3), 10px -10px 25px rgb(246, 129, 3);
-  /* transform: translateZ(0px); */
   z-index: -1;
   opacity: 1;
   transition: opacity 1.5s ease-in-out;
@@ -158,7 +157,7 @@ h1 {
   /* background-blend-mode: multiply; */
   background-color: #0c000f;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   position: relative;
   z-index: 5;
 }
@@ -192,7 +191,7 @@ h1 {
   right: 0px;
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   z-index: -2;
 }
 .hero::before {
