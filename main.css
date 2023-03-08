@@ -358,7 +358,7 @@ nav a:hover {
     perspective: 2000px;
   }
   h1 {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     text-shadow: 8px 8px 12px black;
     transform-style: preserve-3d;
