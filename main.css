@@ -355,9 +355,15 @@ h1 {
   }
   h1 {
     text-shadow: none;
+    perspective: 100px;
+    transform: rotateX(45deg);
   }
   #subHeading {
     text-shadow: none;
+    padding: 20px;
+    line-height: 1.2;
+    perspective: 100px;
+    transform: rotateX(45deg);
   }
 
   nav {
@@ -391,6 +397,7 @@ h1 {
   }
   .hamburger {
     display: block;
+    background-color: #fff;
   }
   .hamburgerContainer:hover {
     cursor: pointer;
