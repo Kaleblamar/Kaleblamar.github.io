@@ -397,6 +397,7 @@ h1 {
     );
     background-blend-mode: multiply;
     width: 100%;
+    height: auto;
     z-index: 99;
   }
   .hamburger {
