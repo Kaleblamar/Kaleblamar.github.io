@@ -355,6 +355,7 @@ nav a:hover {
     background-size: cover;
     background-position: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     perspective: 2000px;
   }
   h1 {
@@ -365,7 +366,7 @@ nav a:hover {
     transform: rotateX(40deg) translateZ(50px);
     z-index: 1;
     line-height: 2;
-    margin: 0 auto;
+    margin: 100px auto;
   }
   #subHeading {
     font-size: 17px;
@@ -376,7 +377,7 @@ nav a:hover {
     transform-style: preserve-3d;
     transform: rotateX(40deg) translateZ(50px);
     z-index: 1;
-    margin: 150px auto;
+    margin: 180px auto;
   }
 
   nav {
