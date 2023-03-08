@@ -334,7 +334,7 @@ h1 {
     rgba(255, 255, 255, 0.09) 0px -3px 5px;
 } */
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 800px) {
   nav {
     flex-direction: column;
     gap: 15px;
