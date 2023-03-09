@@ -9,7 +9,7 @@ let myName = document.getElementById("subHeading");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  moon.style.top = value * 1.05 + "px";
+  // moon.style.top = value * 1.05 + "px";
   stars.style.left = value * 0.1 + "px";
   mountains.style.top = value * 0.5 + "px";
   text.style.bottom = value * 1.35 + "px";
