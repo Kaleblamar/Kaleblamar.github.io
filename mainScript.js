@@ -3,7 +3,6 @@ let moon = document.getElementById("layer2");
 let mountains = document.getElementById("layer1");
 let text = document.getElementById("heading");
 let myName = document.getElementById("subHeading");
-// let earth = document.getElementsById("earth");
 // let btn = document.getElementById("btn-letsgo");
 // let header = document.querySelector("projects");
 
@@ -14,7 +13,6 @@ window.addEventListener("scroll", function () {
   mountains.style.top = value * 0.5 + "px";
   text.style.bottom = value * 1.35 + "px";
   myName.style.bottom = value * 1.35 + "px";
-  // earth.style.left = value * 0.5 + "px";
   // btn.style.marginTop = value * 1 + "px";
   //   header.style.top = value * 0 + "px";
 });
@@ -27,3 +25,11 @@ window.addEventListener("scroll", function () {
 //   heading.style.opacity = 0;
 //   subHeading.style.opacity = 0;
 // });
+
+const hamburger1 = document.getElementsById("bar1");
+const hamburger2 = documet.getElementById("bar3");
+const menu = document.getElementsByClassName("hamburgerContainer");
+
+menu.addEventListener("onclick", function () {
+  this.classList.toggle("transform");
+});
