@@ -419,7 +419,7 @@ nav a:hover {
 }
 /* GRID ITEMS/CARDS */
 .item1 {
-  background: url(../Images/web\ recreate.png);
+  background: url(./Images/web\ recreate.png);
   background-size: cover;
   background-position-y: top;
   background-position-x: center;
@@ -427,7 +427,7 @@ nav a:hover {
 }
 
 .item2 {
-  background: url(../Images/Screenshot\ 2023-03-01\ at\ 8.39.22\ PM.png);
+  background: url(./Images/Screenshot\ 2023-03-01\ at\ 8.39.22\ PM.png);
   background-size: cover;
   background-position-y: top;
   background-position-x: center;
@@ -437,7 +437,7 @@ nav a:hover {
   transition: 0.3s ease-in-out;
 }
 .item3 {
-  background: url(../Images/Screenshot\ 2023-03-01\ at\ 6.43.29\ PM.png);
+  background: url(./Images/Screenshot\ 2023-03-01\ at\ 6.43.29\ PM.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -446,7 +446,7 @@ nav a:hover {
   transition: 0.3s ease-in-out;
 }
 .item4 {
-  background: url(../Images/3d-card.png);
+  background: url(./Images/3d-card.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -456,7 +456,7 @@ nav a:hover {
   transition: 0.3s ease-in-out;
 }
 .item5 {
-  background-image: url(../Images/fullpageproject.png);
+  background-image: url(./Images/fullpageproject.png);
   background-size: cover;
   background-position-y: top;
   background-position-x: center;
