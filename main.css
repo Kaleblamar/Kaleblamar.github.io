@@ -536,19 +536,19 @@ footer::before {
   }
 
   .hero {
-    background-image: url(../Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
+    /* background-image: url(../Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
     background-size: cover;
     background-position: contain;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     perspective: 2000px;
   }
-  .hero::before {
+  /* .hero::before {
     background: linear-gradient(to top, #001029, transparent);
-  }
+  } */
   .hero h1 {
     font-size: 20px;
-    color: white;
+    /* color: white; */
     text-shadow: 8px 8px 12px hsl(0, 0%, 0%);
     transform-style: preserve-3d;
     transform: rotateX(40deg) translateZ(50px);
@@ -558,7 +558,7 @@ footer::before {
   }
   #subHeading {
     font-size: 17px;
-    color: white;
+    /* color: white; */
     text-shadow: 8px 8px 12px black;
     padding: 20px;
     line-height: 2;
@@ -567,19 +567,19 @@ footer::before {
     z-index: 1;
     margin: 180px auto;
   }
-  .aboutMe {
+  /* .aboutMe {
     background-color: #001029;
-  }
-  .aboutMe img {
+  } */
+  /* .aboutMe img {
     background: none;
     width: 200px;
-  }
+  } */
   .parent {
     flex-direction: column-reverse;
   }
   .sideBar {
     width: 100%;
-    background: none;
+    /* background: none; */
   }
 
   .container {
@@ -590,21 +590,21 @@ footer::before {
   }
 
   #layer1 {
-    display: none;
+    /* display: none; */
     /* object-fit: fill; */
   }
   #layer2 {
-    display: none;
-    /* object-fit: contain; */
+    /* display: none; */
+    object-fit: cover;
   }
   #stars-moon {
-    display: none;
+    /* display: none; */
   }
   .projects {
-    background-color: #001029;
+    /* background-color: #001029; */
   }
   .projects h1 {
-    border: none;
+    /* border: none; */
   }
 
   .item1,
@@ -617,9 +617,9 @@ footer::before {
     align-items: flex-end; */
   }
 
-  .container img {
+  /* .container img {
     display: none;
-  }
+  } */
   .container *:hover {
     /* transform: none; */
   }
