@@ -531,25 +531,25 @@ footer::before {
   .hamburgerContainer:hover {
     cursor: pointer;
   }
-  .hamburgerContainer:active #bar1 {
+  .hamburgerContainer #bar1.nav {
     transform: rotate(45deg) translate(0, 15px);
   }
-  .hamburgerContainer:active #bar3 {
+  .hamburgerContainer #bar3.nav {
     transform: rotate(-45deg) translate(0, -15px);
   }
 
   .hero {
     /* background-image: url(./Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg); */
-    background-image: url(./Images/Earth.jpg);
+    background-image: url(./Images/clarisse-meyer-y54gnzC86lw-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     perspective: 2000px;
   }
-  .hero::before {
+  /* .hero::before {
     background: linear-gradient(to top, #001029, transparent);
-  }
+  } */
   .hero h1 {
     font-size: 20px;
     /* color: white; */
@@ -572,16 +572,43 @@ footer::before {
     margin: 180px auto;
   }
   .aboutMe {
-    background-color: #001029;
+    /* background-color: #001029; */
+    position: relative;
+  }
+  .parent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, black, transparent);
+  }
+
+  .aboutMeContainer {
+    background-color: hsl(224, 32%, 12%);
+    background-image: conic-gradient(
+      from 0deg at 50% 50%,
+      blue,
+      #1c0522,
+      #1c0522,
+      blue
+    );
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
   }
   .aboutMe img {
     background: none;
     width: 200px;
   }
 
-  .parent {
+  /* .parent {
     flex-direction: column-reverse;
-  }
+  } */
   .sideBar {
     width: 100%;
     background: none;
@@ -606,7 +633,7 @@ footer::before {
     display: none;
   }
   .projects {
-    background-color: #001029;
+    /* background-color: #001029; */
   }
   .projects h1 {
     border: none;

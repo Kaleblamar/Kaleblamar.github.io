@@ -38,3 +38,9 @@ card.forEach((card) => card.addEventListener("click", flipCard));
 // });
 
 // viewer.observe(photo);
+const hamburger = document.querySelectorAll(".hamburgerContainer");
+const nav = document.getElementById("navBar");
+document.addEventListener("click", function () {
+  hamburger.classList.toggle("nav");
+  console.log("click");
+});
