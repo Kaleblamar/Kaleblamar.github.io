@@ -106,7 +106,7 @@ nav a:hover {
   perspective: 2000px;
 }
 .hero h1 {
-  font-size: 35px;
+  font-size: 25px;
   font-family: "orbitron", sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
@@ -123,11 +123,11 @@ nav a:hover {
   /* opacity: 1; */
   /* transition: opacity 1.5s ease-in-out; */
   transform-style: preserve-3d;
-  transform: rotateX(60deg) translateZ(100px);
+  transform: rotateX(45deg) translateZ(100px);
   /* animation: fadein 3s ease-in-out; */
 }
 #subHeading {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "orbitron", sans-serif;
   text-transform: uppercase;
   line-height: 1;
@@ -142,9 +142,9 @@ nav a:hover {
   text-shadow: 1px 1px 2px black;
   z-index: 0;
   opacity: 1;
-  transition: opacity 1.5s ease-in-out;
+  /* transition: opacity 1.5s ease-in-out; */
   transform-style: preserve-3d;
-  transform: rotateX(60deg) translateZ(100px);
+  transform: rotateX(45deg) translateZ(100px);
   line-height: 1.5;
   /* animation: fadein 3s ease-in-out; */
 }
@@ -536,11 +536,12 @@ footer::before {
   }
 
   .hero {
-    /* background-image: url(../Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg);
+    /* background-image: url(./Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg); */
+    background-image: url(./Images/Earth.jpg);
     background-size: cover;
     background-position: contain;
-    background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     perspective: 2000px;
   }
   .hero::before {
@@ -557,7 +558,7 @@ footer::before {
     margin: 100px auto;
   }
   #subHeading {
-    font-size: 17px;
+    font-size: 20px;
     /* color: white; */
     text-shadow: 8px 8px 12px black;
     padding: 20px;
@@ -591,15 +592,15 @@ footer::before {
   }
 
   #layer1 {
-    /* display: none; */
+    display: none;
     object-fit: fill;
   }
   #layer2 {
-    /* display: none; */
+    display: none;
     object-fit: cover;
   }
   #stars-moon {
-    /* display: none; */
+    display: none;
   }
   .projects {
     background-color: #001029;
