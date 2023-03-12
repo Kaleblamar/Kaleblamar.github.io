@@ -19,7 +19,7 @@ body {
       purple,
       blue
     ),
-    url(./Images/me\ no\ background.png);
+    url(../Images/me\ no\ background.png);
   background-blend-mode: multiply, overlay;
   background-size: contain;
   background-repeat: no-repeat;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Page" />
     <meta name="author" content="James Kaleb Lamar" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="main.css" />
     <title>James Kaleb Lamar</title>
   </head>
@@ -44,7 +45,7 @@
         src="../ParallaxImages/nathan-anderson-9o-VrJSwGuw-unsplash.jpg"
         alt=""
       />
-      <!-- <img id="earth" src="./Images/Earth.jpg" alt="" /> -->
+      <!-- <img id="earth" src="../Images/Earth.jpg" alt="" /> -->
       <h1 id="heading">
         “The Best Way to Predict <br />
         the Future is to Create it.”
@@ -56,7 +57,7 @@
     </section>
     <section class="aboutMe">
       <div class="parent">
-        <div class="sideBar">
+        <div data-aos="fade-right" data-aos-duration="1500" class="sideBar">
           <h1>HI, I'm <span>Kaleb</span></h1>
           <p>
             I am passionate about working hard and getting the job done. I enjoy
@@ -68,42 +69,175 @@
             have acquired.
           </p>
         </div>
-        <img src="../Images/me no background.png" alt="" />
+        <img
+          class="myPhoto"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          src="../Images/me no background.png"
+          alt=""
+        />
       </div>
     </section>
     <section id="projects" class="projects">
       <h1>my projects</h1>
       <a href="#projects"></a>
-      <div class="container">
-        <!-- <div class="icons"> -->
-        <div class="item1">
-          <img src="../Images/html-5-svgrepo-com.svg" alt="" />
-          <img src="../Images/css-3-svgrepo-com.svg" alt="" />
-          <img src="../Images/javascript-plain.svg" alt="" />
+      <div class="container" data-aos="zoom-in" data-aos-duration="1500">
+        <div class="card-container">
+          <div class="card">
+            <div class="item1 card-front"></div>
+            <div class="back-of-card">
+              <div class="back-face-info">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus quo voluptate iure minima minus atque
+                  voluptates iusto aut aperiam ducimus facere velit adipisci
+                  ratione neque laboriosam totam, eius obcaecati. Voluptatum
+                  iste animi ut at nobis, id repellendus cum iusto autem ex
+                  dicta optio inventore provident aliquid quod quia porro
+                  laboriosam!
+                </p>
+                <div class="icons">
+                  <img src="../Images/html-5-svgrepo-com.svg" alt="" />
+                  <img src="../Images/css-3-svgrepo-com.svg" alt="" />
+                  <img src="../Images/javascript-plain.svg" alt="" />
+                </div>
+              </div>
+              <button>
+                <a
+                  href="https://www.apple.com/shop/buy-mac/macbook-pro/14-inch"
+                  target="_blank"
+                  >Launch Webpage</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
-
+        <div class="card-container">
+          <div class="card">
+            <div class="item2 card-front"></div>
+            <div class="back-of-card">
+              <div class="back-face-info">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                  laboriosam earum ipsa, vero, maxime repudiandae assumenda
+                  maiores illo temporibus quidem aperiam eaque dolore nisi,
+                  ipsum eveniet reprehenderit atque obcaecati totam!
+                </p>
+                <div class="icons">
+                  <img src="../Images/html-5-svgrepo-com.svg" alt="" />
+                  <img src="../Images/css-3-svgrepo-com.svg" alt="" />
+                  <img src="../Images/javascript-plain.svg" alt="" />
+                </div>
+              </div>
+              <button>
+                <a
+                  href="https://www.apple.com/shop/buy-mac/macbook-pro/14-inch"
+                  target="_blank"
+                  >Launch Webpage</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item5 card-front"></div>
+            <div class="back-of-card">
+              <div class="back-face-info">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus quo voluptate iure minima minus atque
+                  voluptates iusto aut aperiam ducimus facere velit adipisci
+                  ratione neque laboriosam totam, eius obcaecati. Voluptatum
+                  iste animi ut at nobis, id repellendus cum iusto autem ex
+                  dicta optio inventore provident aliquid quod quia porro
+                  laboriosam!
+                </p>
+                <div class="icons">
+                  <img src="../Images/html-5-svgrepo-com.svg" alt="" />
+                  <img src="../Images/css-3-svgrepo-com.svg" alt="" />
+                  <img src="../Images/javascript-plain.svg" alt="" />
+                </div>
+              </div>
+              <button>
+                <a
+                  href="https://www.apple.com/shop/buy-mac/macbook-pro/14-inch"
+                  target="_blank"
+                  >Launch Webpage</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="container"> -->
+        <div class="card-container">
+          <div class="card">
+            <div class="item3 card-front"></div>
+            <div class="back-of-card">
+              <div class="back-face-info">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus quo voluptate iure minima minus atque
+                  voluptates iusto aut aperiam ducimus facere velit adipisci
+                  ratione neque laboriosam totam, eius obcaecati. Voluptatum
+                  iste animi ut at nobis, id repellendus cum iusto autem ex
+                  dicta optio inventore provident aliquid quod quia porro
+                  laboriosam!
+                </p>
+                <div class="icons">
+                  <img src="../Images/html-5-svgrepo-com.svg" alt="" />
+                  <img src="../Images/css-3-svgrepo-com.svg" alt="" />
+                  <img src="../Images/javascript-plain.svg" alt="" />
+                </div>
+              </div>
+              <button>
+                <a
+                  href="https://www.apple.com/shop/buy-mac/macbook-pro/14-inch"
+                  target="_blank"
+                  >Launch Webpage</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="item4 card-front"></div>
+            <div class="back-of-card">
+              <div class="back-face-info">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus quo voluptate iure minima minus atque
+                  voluptates iusto aut aperiam ducimus facere velit adipisci
+                  ratione neque laboriosam totam, eius obcaecati. Voluptatum
+                  iste animi ut at nobis, id repellendus cum iusto autem ex
+                  dicta optio inventore provident aliquid quod quia porro
+                  laboriosam!
+                </p>
+                <div class="icons">
+                  <img src="../Images/html-5-svgrepo-com.svg" alt="" />
+                  <img src="../Images/css-3-svgrepo-com.svg" alt="" />
+                  <img src="../Images/javascript-plain.svg" alt="" />
+                </div>
+              </div>
+              <button>
+                <a
+                  href="https://www.apple.com/shop/buy-mac/macbook-pro/14-inch"
+                  target="_blank"
+                  >Launch Webpage</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
         <!-- </div> -->
-        <div class="item2">
-          <img src="../Images/html-5-svgrepo-com.svg" alt="" />
-          <img src="../Images/css-3-svgrepo-com.svg" alt="" />
-        </div>
-        <div class="item5">
-          <img src="../Images/html-5-svgrepo-com.svg" alt="" />
-          <img src="../Images/css-3-svgrepo-com.svg" alt="" />
-        </div>
-      </div>
-      <div class="container">
-        <div class="item3">
-          <img src="../Images/html-5-svgrepo-com.svg" alt="" />
-          <img src="../Images/css-3-svgrepo-com.svg" alt="" />
-        </div>
-        <div class="item4">
-          <img src="../Images/html-5-svgrepo-com.svg" alt="" />
-          <img src="../Images/css-3-svgrepo-com.svg" alt="" />
-          <img src="../Images/javascript-plain.svg" alt="" />
-        </div>
       </div>
     </section>
+    <footer></footer>
     <script src="./mainScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
