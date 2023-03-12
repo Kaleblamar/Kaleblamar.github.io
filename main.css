@@ -543,9 +543,9 @@ footer::before {
     /* background-attachment: fixed; */
     perspective: 2000px;
   }
-  /* .hero::before {
+  .hero::before {
     background: linear-gradient(to top, #001029, transparent);
-  } */
+  }
   .hero h1 {
     font-size: 20px;
     /* color: white; */
@@ -567,19 +567,20 @@ footer::before {
     z-index: 1;
     margin: 180px auto;
   }
-  /* .aboutMe {
+  .aboutMe {
     background-color: #001029;
-  } */
-  /* .aboutMe img {
+  }
+  .aboutMe img {
     background: none;
     width: 200px;
-  } */
+  }
+
   .parent {
     flex-direction: column-reverse;
   }
   .sideBar {
     width: 100%;
-    /* background: none; */
+    background: none;
   }
 
   .container {
@@ -591,7 +592,7 @@ footer::before {
 
   #layer1 {
     /* display: none; */
-    /* object-fit: fill; */
+    object-fit: fill;
   }
   #layer2 {
     /* display: none; */
@@ -601,10 +602,11 @@ footer::before {
     /* display: none; */
   }
   .projects {
-    /* background-color: #001029; */
+    background-color: #001029;
   }
   .projects h1 {
-    /* border: none; */
+    border: none;
+    color: var(--teal);
   }
 
   .item1,
