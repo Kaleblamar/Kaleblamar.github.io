@@ -38,9 +38,19 @@ card.forEach((card) => card.addEventListener("click", flipCard));
 // });
 
 // viewer.observe(photo);
-const hamburger = document.querySelectorAll(".hamburgerContainer");
-const nav = document.getElementById("navBar");
-document.addEventListener("click", function () {
-  hamburger.classList.toggle("nav");
-  console.log("click");
+
+// hamburger menu
+const hamburger = document.querySelectorAll(".hamburgerContainer")[0];
+const bar1 = document.getElementById("bar1");
+const bar2 = document.getElementById("bar2");
+const bar3 = document.getElementById("bar3");
+const sideMenu = document.getElementById("sideMenu");
+
+hamburger.addEventListener("click", function () {
+  bar1.classList.toggle("topBarRotate");
+  bar2.classList.toggle("middleBarSlide");
+  bar3.classList.toggle("bottomBarRotate");
+  hamburger.classList.toggle("menuSlide");
+  sideMenu.classList.toggle("sideSlide");
+  console.log("sideMenu");
 });
