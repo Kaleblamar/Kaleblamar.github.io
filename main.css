@@ -560,7 +560,7 @@ footer::before {
     transform: scale(1);
   }
   .sideSlide {
-    transform: translateX(0.5%) !important;
+    transform: translateX(0%) !important;
   }
   .hamburgerContainer {
     display: flex;
