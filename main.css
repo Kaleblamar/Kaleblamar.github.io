@@ -21,6 +21,7 @@
   scroll-behavior: smooth;
   overflow: auto;
 }
+
 /* CONTACT FORM */
 .mobile {
   display: none;
@@ -29,13 +30,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: transparent; */
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   width: 50%;
   border-radius: 10px;
-  border: 2px solid var(--teal);
   display: none;
   position: absolute;
   top: 25%;
@@ -44,7 +45,9 @@
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
   transform: scale(0);
+  filter: drop-shadow(0 0 5px var(--teal));
 }
+
 @keyframes displayForm {
   0% {
     transform: scale(0);

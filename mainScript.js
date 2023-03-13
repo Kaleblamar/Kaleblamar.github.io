@@ -24,23 +24,6 @@ function flipCard() {
 }
 card.forEach((card) => card.addEventListener("click", flipCard));
 
-// animations run when in viewport
-// const element = document.querySelector(".sideBar");
-// const observer = new IntersectionObserver((entries) => {
-//   element.classList.toggle("slide", entries[0].isIntersecting);
-//   console.log("observer");
-// });
-
-// observer.observe(element);
-
-// const photo = document.querySelector(".myPhoto");
-// const viewer = new IntersectionObserver((entries) => {
-//   photo.classList.toggle("fadein", entries[0].isIntersecting);
-//   console.log("fadein");
-// });
-
-// viewer.observe(photo);
-
 // hamburger menu
 const hamburger = document.querySelectorAll(".hamburgerContainer")[0];
 const bar1 = document.getElementById("bar1");
