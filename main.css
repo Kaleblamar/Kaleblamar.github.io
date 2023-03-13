@@ -644,6 +644,7 @@ footer::before {
     left: 12%;
     top: 8%;
     background-blend-mode: multiply;
+    border: none;
   }
   .desktop {
     display: none;
