@@ -54,21 +54,20 @@ hamburger.addEventListener("click", function () {
   bar3.classList.toggle("bottomBarRotate");
   hamburger.classList.toggle("menuSlide");
   sideMenu.classList.toggle("sideSlide");
-  console.log("sideMenu");
 });
 
 // CONTACT FORM
-const contact = document.getElementById("contactLink");
+const contact = document.querySelectorAll(".contactLink")[0];
 const form = document.querySelector(".formContainer");
-const contactMe = document.getElementById("contactMe");
+const contact2 = document.querySelector(".contactLink2");
 
 contact.addEventListener("click", function () {
   form.classList.toggle("showForm");
 });
-
-contactMe.addEventListener("click", function () {
+contact2.addEventListener("click", function () {
   form.classList.toggle("showForm");
 });
-// document.addEventListener("click", function () {
-//   form.classList.toggle("hideForm");
-// });
+const x = document.querySelector(".closeX");
+x.addEventListener("click", function () {
+  form.classList.remove("showForm");
+});

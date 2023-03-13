@@ -40,21 +40,10 @@
   position: absolute;
   top: 25%;
   left: 25%;
-  z-index: 999;
+  z-index: 100;
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
   transform: scale(0);
-}
-.showForm {
-  display: flex;
-}
-textarea {
-  border-radius: 5px;
-  background-color: black;
-  color: var(--teal);
-}
-.hideForm {
-  display: none;
 }
 @keyframes displayForm {
   0% {
@@ -67,6 +56,34 @@ textarea {
     transform: scale(1);
   }
 }
+.closeX {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 50px;
+  color: var(--pink);
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+}
+.closeX:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(1.2);
+}
+
+.showForm {
+  display: flex;
+}
+textarea {
+  border-radius: 5px;
+  background-color: black;
+  color: var(--teal);
+}
+
 label {
   color: var(--pink);
   text-transform: uppercase;
@@ -751,27 +768,18 @@ footer::before {
   }
   .hamburger {
     display: block;
-    /* background-color: #fff; */
     background-color: var(--teal);
     transition: 0.3s ease-in-out;
   }
   .hamburgerContainer:hover {
     cursor: pointer;
   }
-  /* .hamburgerContainer #bar1.nav {
-    transform: rotate(45deg) translate(0, 15px);
-  } */
-  /* .hamburgerContainer #bar3.nav {
-    transform: rotate(-45deg) translate(0, -15px);
-  } */
 
   .hero {
-    /* background-image: url(./Images/eberhard-grossgasteiger-pBgnT4KH8d4-unsplash.jpg); */
     background-image: url(./Images/clarisse-meyer-y54gnzC86lw-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     perspective: 2000px;
   }
   /* .hero::before {
@@ -779,24 +787,14 @@ footer::before {
   } */
   .hero h1 {
     font-size: 20px;
-    /* color: white; */
     text-shadow: 8px 8px 12px hsl(0, 0%, 0%);
-    /* transform-style: preserve-3d; */
-    /* transform: rotateX(40deg) translateZ(50px); */
-    /* z-index: 1; */
     line-height: 2;
-    /* margin: 100px auto; */
   }
   #subHeading {
     font-size: 20px;
-    /* color: white; */
     text-shadow: 8px 8px 12px black;
     padding: 20px;
     line-height: 2;
-    /* transform-style: preserve-3d; */
-    /* transform: rotateX(40deg) translateZ(50px); */
-    /* z-index: 1; */
-    /* margin: 180px auto; */
   }
   .aboutMe {
     /* background-color: #001029; */
