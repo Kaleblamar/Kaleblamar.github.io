@@ -26,39 +26,54 @@
       <span class="hamburger" id="bar3"></span>
     </div>
     <!-- CONTACT FORM -->
+
     <div class="formContainer">
       <div class="contactSide">
+        <!-- <h1>contact me</h1> -->
         <img src="./Images/me no background.png" alt="" />
       </div>
-      <form
-        action="https://formsubmit.co/lamarkaleb@gmail.com"
-        method="post"
-        class="contact"
-      >
-        <!-- <h1>Get In Touch</h1> -->
-        <label for="name">your name:</label>
-        <br />
-        <input type="text" id="name" required placeholder="Full Name" />
-        <br />
-        <label for="email">Your Email:</label>
-        <br />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter email"
-          required
-        />
-        <textarea
-          name="message"
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Enter message.."
-        ></textarea>
-        <input type="submit" value="submit" />
-      </form>
+      <fieldset>
+        <legend>Contact Me</legend>
+        <form
+          action="https://formsubmit.co/lamarkaleb@gmail.com"
+          method="post"
+          class="contact"
+        >
+          <!-- <h1>Get In Touch</h1> -->
+          <label for="name">your name:</label>
+          <br />
+          <input type="text" id="name" required placeholder="Full Name" />
+          <br />
+          <label for="email">Your Email:</label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+            required
+          />
+          <textarea
+            class="desktop"
+            name="message"
+            id="message"
+            cols="40"
+            rows="10"
+            placeholder="Enter message.."
+          ></textarea>
+          <textarea
+            class="mobile"
+            name="message"
+            id="message"
+            cols="20"
+            rows="10"
+            placeholder="Enter message.."
+          ></textarea>
+          <input type="submit" value="submit" />
+        </form>
+      </fieldset>
     </div>
+
     <!-- NAVBAR -->
     <nav id="navBar">
       <div class="logoContainer" data-aos="fade-right" data-aos-duration="1500">
