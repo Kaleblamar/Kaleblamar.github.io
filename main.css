@@ -641,6 +641,7 @@ footer::before {
     padding: 30px;
     width: 70%;
     left: 12%;
+    top: 8%;
   }
   .desktop {
     display: none;
