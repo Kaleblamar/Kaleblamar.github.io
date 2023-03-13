@@ -30,7 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: transparent; */
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
@@ -44,10 +43,10 @@
   z-index: 100;
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
-  transform: scale(0);
   filter: drop-shadow(0 0 5px var(--teal));
+  transition: 1.5s ease-in-out !important;
+  /* animation: reverse 1.5 sec ease-in-out !important; */
 }
-
 @keyframes displayForm {
   0% {
     transform: scale(0);
@@ -59,6 +58,7 @@
     transform: scale(1);
   }
 }
+
 .closeX {
   position: absolute;
   top: 0;
@@ -80,7 +80,9 @@
 
 .showForm {
   display: flex;
+  /* animation: displayForm 1.5s ease-in-out forwards !important; */
 }
+
 textarea {
   border-radius: 5px;
   background-color: black;
@@ -90,11 +92,6 @@ textarea {
 label {
   color: var(--pink);
   text-transform: uppercase;
-}
-.contactSide {
-  width: 50%;
-  height: 100%;
-  /* background-color: red; */
 }
 
 fieldset {
@@ -109,17 +106,23 @@ legend {
   width: 100%;
   opacity: 0.5;
 }
-.contact {
+.contactSide {
+  width: 100%;
+  /* height: 100%; */
+  /* background-color: red; */
+}
+.contactForm {
   width: 100%;
   height: 100%;
   margin-left: 20px;
 }
-.contact input {
+
+.contactForm input {
   border: none;
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
-  width: 80%;
+  width: 100%;
   background-color: black;
   color: var(--teal);
 }
@@ -138,6 +141,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   cursor: pointer;
   transform: scale(0.9);
+  filter: drop-shadow(0 0 5px var(--teal));
 }
 /* SIDE MENU DISPLAY DESKTOP */
 #sideMenu {
@@ -280,19 +284,7 @@ nav a:hover {
   width: 100%;
   /* z-index: 7; */
 }
-/* #contactMe {
-  position: relative;
-  width: 120px;
-  background-color: blue;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  filter: drop-shadow(0px 0px 16px black);
-  text-transform: uppercase;
-}
-#contactMe:hover {
-  cursor: pointer;
-} */
+
 #subHeading {
   font-size: 20px;
   font-family: "orbitron", sans-serif;
@@ -376,13 +368,7 @@ nav a:hover {
 .menuSlide {
   transform: translateX(40%);
 }
-/* .hamburgerContainer:hover #bar2 {
-  transform: translateX(-15px);
-} */
 
-/* .hamburgerContainer:active #bar2 {
-  transform: translateX(-1000px);
-} */
 /* ABOUT ME SECTION */
 .aboutMe {
   position: relative;
@@ -444,22 +430,8 @@ nav a:hover {
 }
 .parent {
   position: relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  width: 100%; */
-  /* background-color: red; */
 }
-/* .parent::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: linear-gradient(to bottom, black, transparent);
-} */
+
 .aboutMeContainer {
   display: flex;
   justify-content: space-evenly;
@@ -663,11 +635,64 @@ footer::before {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 1400px) {
+  .formContainer {
+    width: 50%;
+    left: 33%;
+  }
+  .contactForm {
+    width: 90%;
+  }
+  .contactForm input,
+  textarea {
+    padding: 20px;
+    width: 100%;
+  }
+  .contactSide {
+    width: 100%;
+  }
+  .contactSide img {
+    width: 60%;
+  }
+
+  .headingContainer {
+    margin-top: 100px;
+  }
+  .sideBar {
+    padding: 145px;
+  }
+  .sideBar p {
+    line-height: 3;
+  }
+  .myPhoto {
+    padding: 65px;
+  }
+}
+@media (min-width: 801px) and (max-width: 1060px) {
+  .formContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contactSide img {
+    width: 50%;
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .contactForm,
+  textarea {
+    width: 95%;
+  }
+  .contactForm input {
+    width: 95%;
+  }
+}
 @media (min-width: 320px) and (max-width: 800px) {
   .formContainer {
     flex-direction: column;
     align-items: flex-end;
-    padding: 30px;
+    padding: 10px;
     width: 70%;
     left: 12%;
     top: 8%;
@@ -689,10 +714,10 @@ footer::before {
     width: 50%;
     display: block;
   }
-  .contact {
+  .contactForm {
     width: 90%;
   }
-  .contact input {
+  .contactForm input {
     width: 100%;
   }
   fieldset {

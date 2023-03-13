@@ -35,7 +35,6 @@
     <div class="formContainer">
       <button class="closeX">&times;</button>
       <div class="contactSide">
-        <!-- <h1>contact me</h1> -->
         <img src="./Images/me no background.png" alt="" />
       </div>
       <fieldset>
@@ -43,39 +42,40 @@
         <form
           action="https://formsubmit.co/lamarkaleb@gmail.com"
           method="post"
-          class="contact"
+          class="contactForm"
         >
-          <!-- <h1>Get In Touch</h1> -->
-          <label for="name">your name:</label>
-          <br />
-          <input type="text" id="name" required placeholder="Full Name" />
-          <br />
-          <label for="email">Your Email:</label>
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Enter email"
-            required
-          />
-          <textarea
-            class="desktop"
-            name="message"
-            id="message"
-            cols="40"
-            rows="10"
-            placeholder="Enter message.."
-          ></textarea>
-          <textarea
-            class="mobile"
-            name="message"
-            id="message"
-            cols="20"
-            rows="10"
-            placeholder="Enter message.."
-          ></textarea>
-          <input type="submit" value="submit" />
+          <div class="formInputs">
+            <label for="name">your name:</label>
+            <br />
+            <input type="text" id="name" required placeholder="Full Name" />
+            <br />
+            <label for="email">Your Email:</label>
+            <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter email"
+              required
+            />
+            <textarea
+              class="desktop"
+              name="message"
+              id="message"
+              cols="40"
+              rows="10"
+              placeholder="Enter message.."
+            ></textarea>
+            <textarea
+              class="mobile"
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+              placeholder="Enter message.."
+            ></textarea>
+            <input type="submit" value="submit" />
+          </div>
         </form>
       </fieldset>
     </div>
@@ -124,11 +124,11 @@
       <!-- <img id="earth" src="../Images/Earth.jpg" alt="" /> -->
       <div class="headingContainer">
         <div class="headingBox">
-          <h1 id="heading">
+          <h1 id="heading" data-aos="fade-right" data-aos-duration="1500">
             “The Best Way to Predict <br />
             the Future is to Create it.”
           </h1>
-          <h2 id="subHeading">
+          <h2 id="subHeading" data-aos="fade-left" data-aos-duration="1500">
             James Kaleb Lamar <br />
             Jr WebDeveloper
           </h2>
