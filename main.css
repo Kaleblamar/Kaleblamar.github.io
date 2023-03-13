@@ -32,6 +32,7 @@
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
+  background-repeat: no-repeat;
   width: 50%;
   border-radius: 10px;
   border: 2px solid var(--teal);
