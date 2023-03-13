@@ -640,6 +640,7 @@ footer::before {
     align-items: flex-end;
     padding: 30px;
     width: 70%;
+    left: 12%;
   }
   .desktop {
     display: none;
