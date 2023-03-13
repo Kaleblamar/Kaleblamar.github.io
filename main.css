@@ -44,6 +44,12 @@
 .showForm {
   display: flex;
 }
+textarea {
+  border-radius: 5px;
+}
+.hideForm {
+  display: none;
+}
 @keyframes displayForm {
   0% {
     transform: scale(0);
@@ -81,7 +87,7 @@ label {
   margin: 10px auto;
   width: 80%;
 }
-input[type="button"] {
+input[type="submit"] {
   background-color: #000;
   color: var(--pink);
   border-radius: 20px;
@@ -89,7 +95,7 @@ input[type="button"] {
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
 }
-input[type="button"]:hover {
+input[type="submit"]:hover {
   cursor: pointer;
   transform: scale(0.9);
 }
@@ -620,12 +626,17 @@ footer::before {
 @media (min-width: 320px) and (max-width: 800px) {
   .formContainer {
     flex-direction: column;
+    align-items: flex-end;
+    padding: 30px;
   }
   .contactSide {
     width: 100%;
     padding: 15px;
   }
   .contact {
+    width: 100%;
+  }
+  .contact input {
     width: 100%;
   }
 

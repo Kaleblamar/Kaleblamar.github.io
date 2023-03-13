@@ -57,6 +57,7 @@ hamburger.addEventListener("click", function () {
   console.log("sideMenu");
 });
 
+// CONTACT FORM
 const contact = document.getElementById("contactLink");
 const form = document.querySelector(".formContainer");
 const contactMe = document.getElementById("contactMe");
@@ -68,3 +69,6 @@ contact.addEventListener("click", function () {
 contactMe.addEventListener("click", function () {
   form.classList.toggle("showForm");
 });
+// document.addEventListener("click", function () {
+//   form.classList.toggle("hideForm");
+// });
