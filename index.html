@@ -6,21 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio Page" />
     <meta name="author" content="James Kaleb Lamar" />
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
       href="./Images/html-5-svgrepo-com.svg"
       type="image/x-icon"
     />
+    <!-- ANIMATIONS LIBRARY LINK -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- MAIN CSS LINK -->
     <link rel="stylesheet" href="main.css" />
     <title>James Kaleb Lamar</title>
   </head>
   <body>
+    <!-- MOBILE VIEW HAMBURGER MENU BUTTON -->
     <div class="hamburgerContainer">
       <span class="hamburger" id="bar1"></span>
       <span class="hamburger" id="bar2"></span>
       <span class="hamburger" id="bar3"></span>
     </div>
+    <!-- CONTACT FORM -->
+    <div class="formContainer">
+      <div class="contactSide">
+        <img src="./Images/me no background.png" alt="" />
+      </div>
+      <form class="contact">
+        <!-- <h1>Get In Touch</h1> -->
+        <label for="name">your name:</label>
+        <br />
+        <input type="text" id="name" placeholder="Full Name" />
+        <br />
+        <label for="email">Your Email:</label>
+        <br />
+        <input type="email" name="email" id="email" placeholder="Enter email" />
+        <input type="button" value="submit" />
+      </form>
+    </div>
+    <!-- NAVBAR -->
     <nav id="navBar">
       <div class="logoContainer" data-aos="fade-right" data-aos-duration="1500">
         <span class="logo">KL</span>
@@ -31,19 +53,20 @@
         <li><a href="./About/about.html">about</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#">services</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a id="contactLink" href="#">contact</a></li>
       </ul>
     </nav>
-    <!-- mobile view side bar -->
+    <!-- MOBILE VIEW SIDEBAR -->
     <aside id="sideMenu">
       <ul data-aos="fade-left" data-aos-duration="1500">
         <li><a href="index.html">home</a></li>
         <li><a href="./About/about.html">about</a></li>
         <li><a href="#projects">projects</a></li>
         <li><a href="#">services</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a id="contactMe" href="#">contact</a></li>
       </ul>
     </aside>
+    <!-- HERO SECTION -->
     <section class="hero">
       <img
         id="layer1"
@@ -61,15 +84,21 @@
         alt=""
       />
       <!-- <img id="earth" src="../Images/Earth.jpg" alt="" /> -->
-      <h1 id="heading">
-        “The Best Way to Predict <br />
-        the Future is to Create it.”
-      </h1>
-      <h2 id="subHeading">
-        James Kaleb Lamar <br />
-        Jr WebDeveloper
-      </h2>
+      <div class="headingContainer">
+        <div class="headingBox">
+          <h1 id="heading">
+            “The Best Way to Predict <br />
+            the Future is to Create it.”
+          </h1>
+          <h2 id="subHeading">
+            James Kaleb Lamar <br />
+            Jr WebDeveloper
+          </h2>
+          <!-- <button id="contactMe">Contact me</button> -->
+        </div>
+      </div>
     </section>
+    <!-- ABOUT ME SECTION -->
     <section class="aboutMe">
       <div class="parent">
         <div class="aboutMeContainer">
@@ -95,9 +124,11 @@
         </div>
       </div>
     </section>
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
       <h1>my projects</h1>
       <a href="#projects"></a>
+      <!-- GRID CONTAINER -->
       <div class="container" data-aos="zoom-in" data-aos-duration="1500">
         <div class="card-container">
           <div class="card">
@@ -186,7 +217,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="container"> -->
         <div class="card-container">
           <div class="card">
             <div class="item3 card-front"></div>
@@ -247,11 +277,14 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </div>
+      <!-- GRID CONTAINER END -->
     </section>
+    <!-- FOOTER -->
     <footer></footer>
+    <!-- MAIN JS TAG -->
     <script src="./mainScript.js"></script>
+    <!-- ANIMATIONS LIBRARY -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -2,16 +2,18 @@
 let stars = document.getElementById("stars-moon");
 let moon = document.getElementById("layer2");
 let mountains = document.getElementById("layer1");
-let text = document.getElementById("heading");
-let myName = document.getElementById("subHeading");
+// let text = document.getElementById("heading");
+// let myName = document.getElementById("subHeading");
+let heading = document.querySelector(".headingContainer");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   moon.style.top = value * 1.05 + "px";
   stars.style.left = value * 0.1 + "px";
   mountains.style.top = value * 0.5 + "px";
-  text.style.bottom = value * 1.35 + "px";
-  myName.style.bottom = value * 1.35 + "px";
+  // text.style.bottom = value * 1.35 + "px";
+  // myName.style.bottom = value * 1.35 + "px";
+  heading.style.bottom = value * 1.35 + "px";
 });
 
 // CARD FLIP
@@ -53,4 +55,16 @@ hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("menuSlide");
   sideMenu.classList.toggle("sideSlide");
   console.log("sideMenu");
+});
+
+const contact = document.getElementById("contactLink");
+const form = document.querySelector(".formContainer");
+const contactMe = document.getElementById("contactMe");
+
+contact.addEventListener("click", function () {
+  form.classList.toggle("showForm");
+});
+
+contactMe.addEventListener("click", function () {
+  form.classList.toggle("showForm");
 });
