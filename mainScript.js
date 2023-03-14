@@ -1,7 +1,7 @@
 // PARALLAX
-let stars = document.getElementById("stars-moon");
-let moon = document.getElementById("layer2");
-let mountains = document.getElementById("layer1");
+let stars = document.getElementById("stars");
+let moon = document.getElementById("moon");
+let mountains = document.getElementById("mountains");
 // let sky = document.getElementById("layer3");
 let heading = document.querySelector(".headingContainer");
 
