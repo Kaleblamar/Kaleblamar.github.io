@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap";
 
 :root {
   --background-color: hsl(224, 32%, 12%);
@@ -20,6 +21,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow: auto;
+  /* font-family: "montserrat"; */
 }
 
 /* CONTACT FORM */
@@ -44,8 +46,6 @@
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
   filter: drop-shadow(0 0 5px var(--teal));
-  transition: 1.5s ease-in-out !important;
-  /* animation: reverse 1.5 sec ease-in-out !important; */
 }
 @keyframes displayForm {
   0% {
@@ -80,7 +80,6 @@
 
 .showForm {
   display: flex;
-  /* animation: displayForm 1.5s ease-in-out forwards !important; */
 }
 
 textarea {
@@ -173,7 +172,7 @@ nav ul li a {
   text-transform: uppercase;
   color: var(--teal);
   position: relative;
-  font-family: "orbitron", sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 nav ul li a::after {
   content: "";
@@ -205,7 +204,7 @@ nav a:hover {
   padding: 5px;
   color: red;
   background-color: rgb(4, 33, 248);
-  font-family: "orbitron", sans-serif;
+  font-family: "montserrat", sans-serif;
   font-weight: bold;
 }
 .graphic {
@@ -214,17 +213,19 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: bold;
-  font-family: "orbitron", sans-serif;
+  font-family: "montserrat", sans-serif;
 }
 
 /* HERO SECTION */
 .hero {
   /* background-image: url(../Images/Earth.jpg);
   background-size: cover; */
+  background-color: #000;
   min-height: 100vh;
   position: relative;
   z-index: -1;
   perspective: 2000px;
+  /* overflow: auto; */
 }
 .hero::before {
   content: "";
@@ -235,27 +236,17 @@ nav a:hover {
   width: 100%;
   background: linear-gradient(to top, #000, transparent);
   z-index: 6;
+  overflow: hidden;
 }
 .hero h1 {
   font-size: 25px;
-  font-family: "orbitron", sans-serif;
+  font-family: "montserrat", sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
   text-align: center;
   color: var(--pink);
-  /* margin-top: 250px; */
-  /* position: relative; */
-  /* top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; */
   text-shadow: 2px 2px 4px black;
-  /* z-index: 0; */
-  /* opacity: 1; */
-  /* transition: opacity 1.5s ease-in-out; */
   transform-style: preserve-3d;
-  /* transform: rotateX(45deg) translateZ(100px); */
-  /* animation: fadein 3s ease-in-out; */
 }
 
 .headingContainer {
@@ -287,25 +278,14 @@ nav a:hover {
 
 #subHeading {
   font-size: 20px;
-  font-family: "orbitron", sans-serif;
+  font-family: "montserrat", sans-serif;
   text-transform: uppercase;
   line-height: 1;
   text-align: center;
   color: var(--teal);
   margin: 20px;
-  /* position: relative; */
-  /* top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; */
   text-shadow: 1px 1px 2px black;
-  /* z-index: 0; */
-  opacity: 1;
-  /* transition: opacity 1.5s ease-in-out; */
-  /* transform-style: preserve-3d; */
-  /* transform: rotateX(45deg) translateZ(100px); */
   line-height: 1.5;
-  /* animation: fadein 3s ease-in-out; */
 }
 #layer1 {
   position: absolute;
@@ -315,30 +295,41 @@ nav a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
   z-index: 0;
 }
 #layer2 {
   position: absolute;
   top: 0;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
-  right: 0;
+  /* right: 0; */
   width: 100%;
   height: 100%;
   object-fit: contain;
   z-index: -1;
 }
-#stars-moon {
+#layer3 {
   position: absolute;
   top: 0;
-  bottom: 0;
+  /* bottom: 0; */
   left: 0;
-  right: 0;
+  /* right: 0; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: -2;
+}
+#stars-moon {
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  left: 0;
+  /* right: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
 }
 
 /* HAMBURGER MENU STYLING */
@@ -374,19 +365,9 @@ nav a:hover {
   position: relative;
   z-index: 5;
   background-color: #000;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: center;
+  /* margin-top: 300px; */
 }
-.myPhoto {
-  opacity: 0.5 !important;
-  background-color: var(--background-color);
-  background-image: var(--purple-gradient);
-  background-blend-mode: multiply;
-  border-radius: 30px;
-  /* animation: fadein 3s ease-in; */
-}
+
 /* @keyframes fadein {
   from {
     opacity: 0;
@@ -395,21 +376,34 @@ nav a:hover {
     opacity: 0.5;
   }
 } */
+.aboutMeContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 300px;
+  position: relative;
+  /* filter: drop-shadow(0 0 5px var(--pink)); */
+  margin-bottom: 10px;
+}
 .sideBar {
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
   border-radius: 30px;
   padding: 40px;
-  /* border-right: 3px solid white; */
-  text-align: center;
   width: 50%;
   height: 100%;
   color: white;
   line-height: 2.5;
   font-family: sans-serif;
-  /* transform: translateX(100%); */
   /* animation: slide 1.5s ease-in-out forwards; */
+}
+.myPhoto {
+  opacity: 0.5 !important;
+  width: 200px;
+  height: 300px;
+  border-radius: 30px;
+  /* animation: fadein 3s ease-in; */
 }
 /* @keyframes slide {
   0% {
@@ -425,20 +419,114 @@ nav a:hover {
 .sideBar h1 {
   font-family: "orbitron", sans-serif;
 }
+/* .sideBar::after {
+  content: url(./Images/me\ no\ background.png);
+  position: absolute;
+  width: 100px;
+  bottom: 10px;
+  opacity: 0.2;
+  z-index: 10;
+} */
 .sideBar span {
   color: var(--teal);
 }
-.parent {
+
+/* 3D-CARD */
+.my-card {
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+.card-box {
+  /* background-color: var(--background-color);
+  background-image: var(--purple-gradient);
+  background-blend-mode: multiply; */
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+#my-Card-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: hsl(222, 45%, 7%);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
   position: relative;
+  width: min-content;
+  height: 35vh;
+  transform-style: preserve-3d;
+  /* transform: perspective(5000px) rotateY(20deg) rotateX(20deg); */
+  transform: perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX));
+  overflow: visible;
+  margin-right: 20px;
 }
 
-.aboutMeContainer {
+.myName {
+  color: var(--pink);
+}
+.myProfession {
+  color: var(--teal);
+}
+.punctuation {
+  color: var(--white);
+}
+
+#my-Card-Container > * {
+  text-shadow: 0 0 0.3em currentColor;
+}
+.background {
   display: flex;
-  justify-content: space-evenly;
-  gap: 100px;
   align-items: center;
-  margin-top: 200px;
-  /* background-color: red; */
+  background-color: var(--background-color);
+  background-image: var(--purple-gradient);
+  background-blend-mode: multiply;
+  /* transform: translateZ(48px); */
+  filter: blur(0px) opacity(0.8);
+  border-radius: 10px;
+  /* padding: 10px 10px; */
+  height: 35vh;
+  transform-style: preserve-3d;
+  /* filter: blur(0px) opacity(1); */
+  /* transform: perspective(8000px) rotateY(0deg) rotateX(0deg); */
+}
+#my-Card-Container::before,
+#my-Card-Container::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+#my-Card-Container::before {
+  inset: 0.75rem;
+  background-color: rgb(0, 0, 0);
+  transform: translateZ(-49px);
+  filter: blur(15px) opacity(0.75);
+  /* filter: drop-shadow(0 0 16px var(--teal)); */
+}
+#my-Card-Container::after {
+  content: "";
+  border-radius: inherit;
+  inset: -1rem;
+  background-color: var(--background-color);
+  background-image: var(--purple-gradient);
+  background-blend-mode: color;
+  transform: translateZ(-50px);
+  /* filter: drop-shadow(0 0 16px var(--pink)); */
+}
+.my-card-icons {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 15px; */
 }
 
 /* PROJECTS SECTION */
@@ -559,6 +647,7 @@ nav a:hover {
 .back-of-card button:hover {
   cursor: pointer;
   transform: scale(0.9);
+  filter: drop-shadow(0 0 8px var(--teal));
 }
 .back-of-card button a {
   text-decoration: none;
@@ -675,7 +764,7 @@ footer::before {
   }
 
   .contactSide img {
-    width: 50%;
+    width: 25%;
     display: block;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -685,7 +774,7 @@ footer::before {
     width: 95%;
   }
   .contactForm input {
-    width: 95%;
+    width: 100%;
   }
 }
 @media (min-width: 320px) and (max-width: 800px) {
@@ -711,7 +800,7 @@ footer::before {
     padding: 15px;
   }
   .contactSide img {
-    width: 50%;
+    width: 33%;
     display: block;
   }
   .contactForm {
@@ -725,10 +814,7 @@ footer::before {
   }
 
   #navBar {
-    /* flex-direction: column;
-    gap: 15px; */
     display: none;
-    /* transform: translateX(-500px); */
   }
   #sideMenu {
     display: flex;
@@ -748,12 +834,9 @@ footer::before {
   #sideMenu ul {
     display: flex;
     flex-direction: column;
-    /* justify-content: ; */
-    /* align-items: ; */
     gap: 20px;
     height: 100vh;
     padding: 30px 20px;
-    /* position: relative; */
   }
   #sideMenu ul a {
     text-decoration: none;
@@ -804,11 +887,11 @@ footer::before {
   }
 
   .hero {
-    background-image: url(./Images/clarisse-meyer-y54gnzC86lw-unsplash.jpg);
+    /* background-image: url(./Images/clarisse-meyer-y54gnzC86lw-unsplash.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    perspective: 2000px;
+    background-repeat: no-repeat; */
+    /* perspective: 2000px; */
   }
   /* .hero::before {
     background: linear-gradient(to top, #001029, transparent);
@@ -835,7 +918,7 @@ footer::before {
     bottom: 0;
     right: 0;
     left: 0;
-    background: linear-gradient(to bottom, black, transparent);
+    background: linear-gradient(to top, black, transparent);
   }
 
   .aboutMeContainer {
@@ -852,11 +935,16 @@ footer::before {
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
   }
-  .aboutMe img {
-    background: none;
-    width: 200px;
+  .aboutMeContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, black, transparent);
   }
 
   .sideBar {
@@ -872,19 +960,17 @@ footer::before {
   }
 
   #layer1 {
-    display: none;
-    object-fit: fill;
+    /* display: none; */
+    /* object-fit: cover; */
   }
   #layer2 {
+    /* display: none; */
+    /* object-fit: cover; */
+  }
+  /* #stars-moon {
     display: none;
-    object-fit: cover;
-  }
-  #stars-moon {
-    display: none;
-  }
-  .projects {
-    /* background-color: #001029; */
-  }
+  } */
+
   .projects h1 {
     border: none;
     color: var(--teal);

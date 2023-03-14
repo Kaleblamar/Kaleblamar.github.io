@@ -2,19 +2,40 @@
 let stars = document.getElementById("stars-moon");
 let moon = document.getElementById("layer2");
 let mountains = document.getElementById("layer1");
-// let text = document.getElementById("heading");
-// let myName = document.getElementById("subHeading");
+// let sky = document.getElementById("layer3");
 let heading = document.querySelector(".headingContainer");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   moon.style.top = value * 1.05 + "px";
-  stars.style.left = value * 0.1 + "px";
-  mountains.style.top = value * 0.5 + "px";
-  // text.style.bottom = value * 1.35 + "px";
-  // myName.style.bottom = value * 1.35 + "px";
-  heading.style.bottom = value * 1.35 + "px";
+  stars.style.left = value * 0.25 + "px";
+  mountains.style.top = value * 0 + "px";
+  // sky.style.left = value * 1.35 + "px";
+  heading.style.left = value * 1.35 + "px";
 });
+
+//3D-CARD
+const parent = document.getElementById("my-Card-Container");
+document.addEventListener("mousemove", (e) => {
+  rotateElement(e, parent);
+});
+function rotateElement(event, element) {
+  //get mouse position
+  const x = event.clientX;
+  const y = event.clientY;
+
+  //find middle
+  const middleX = window.innerWidth / 2;
+  const middleY = window.innerHeight / 2;
+
+  //get offset fromm middle
+  const offsetX = ((x - middleX) / middleX) * 45;
+  const offsetY = ((y - middleY) / middleY) * 45;
+  //   console.log(offsetX, offsetY);
+
+  element.style.setProperty("--rotateX", -1 * offsetY + "deg");
+  element.style.setProperty("--rotateY", offsetX + "deg");
+}
 
 // CARD FLIP
 const card = document.querySelectorAll(".card");

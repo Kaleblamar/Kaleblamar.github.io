@@ -87,21 +87,21 @@
         <span class="graphic">kaleb Lamar </span>
       </div>
       <ul data-aos="fade-left" data-aos-duration="1500">
-        <li><a href="index.html">home</a></li>
-        <li><a href="./About/about.html">about</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#aboutMeSection">about</a></li>
         <li><a href="#projects">projects</a></li>
-        <li><a href="#">services</a></li>
+        <li><a href="#">My Resume</a></li>
         <li><a class="contactLink" href="#">contact</a></li>
       </ul>
     </nav>
     <!-- MOBILE VIEW SIDEBAR -->
     <aside id="sideMenu">
       <ul data-aos="fade-left" data-aos-duration="1500">
-        <li><a href="index.html">home</a></li>
-        <li><a href="./About/about.html">about</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#aboutMeSection">about</a></li>
         <li><a href="#projects">projects</a></li>
-        <li><a href="#">services</a></li>
-        <li><a class="contactLink contactLink2" href="#">contact</a></li>
+        <li><a href="#">My Resume</a></li>
+        <li><a class="contactLink contactLink2" href="#contact">contact</a></li>
       </ul>
     </aside>
     <!-- HERO SECTION -->
@@ -121,6 +121,11 @@
         src="./ParallaxImages/nathan-anderson-9o-VrJSwGuw-unsplash.jpg"
         alt=""
       />
+      <!-- <img id="layer1" src="./ParallaxImages/mountains_front.png" alt="">
+      <img id="layer2" src="./ParallaxImages/mountains_behind.png" alt="">
+      <img id="stars-moon" src="./ParallaxImages/moon.png" alt="">
+      <img id="layer3" src="./ParallaxImages/stars.png" alt=""> -->
+      
       <!-- <img id="earth" src="../Images/Earth.jpg" alt="" /> -->
       <div class="headingContainer">
         <div class="headingBox">
@@ -137,12 +142,23 @@
       </div>
     </section>
     <!-- ABOUT ME SECTION -->
-    <section class="aboutMe">
+    <a href="#aboutMeSection"></a>
+    <section id="aboutMeSection" class="aboutMe">
       <div class="parent">
         <div class="aboutMeContainer">
-          <div data-aos="fade-right" data-aos-duration="1500" class="sideBar">
-            <h1>HI, I'm <span>Kaleb</span></h1>
-            <p>
+          <div data-aos="slide-right" data-aos-duration="1500" class="sideBar">
+                 <img
+            class="myPhoto"
+            data-aos="slide-right"
+            data-aos-duration="2000"
+            src="./Images/me no background.png"
+            alt="An picture of Kaleb Lamar"
+            loading="lazy"
+          />
+            <h1 data-aos="slide-right"
+            data-aos-duration="2000">HI, I'm <span>Kaleb</span></h1>
+            <p data-aos="slide-right"
+            data-aos-duration="2000">
               I am passionate about working hard and getting the job done. I
               enjoy being challenged, and will never turn down a challenge. I
               Have worked several years in the manufacturing industry, but now I
@@ -152,20 +168,41 @@
               have acquired.
             </p>
           </div>
-          <img
-            class="myPhoto"
-            data-aos="fade-left"
-            data-aos-duration="1500"
-            src="./Images/me no background.png"
-            alt=""
-          />
+       
+        </div>
+        </div>
+        
+
+      
+    </section>
+    <!-- 3D CARD -->
+   <section class="my-card">
+    <div class="card-box" data-aos="slide-left" data-aos-duration="1500">
+    <div id="my-Card-Container">
+        <div class="background">
+          <code>
+            <span class="myName">Kaleb Lamar</span>
+            <span class="myProfession">WebDevelopment</span>
+            <span class="punctuation"
+              ><img class="my-card-icons" src="./Images/html-5-svgrepo-com.svg" alt="an icon of the html logo"
+            /></span>
+            <span><img class="my-card-icons" src="./Images/css-3-svgrepo-com.svg" alt="an iconof the css logo" loading="lazy" /></span>
+            <span><img class="my-card-icons" src="./Images/javascript-plain.svg" alt="an icon of the javascript logo" loading="lazy"/></span>
+            <span> <img class="my-card-icons" src="./Images/icons8-python-94.png " alt="an icon of the python logo" loading="lazy" /></span>
+            <span class="punctuation"
+              ><img class="my-card-icons" src="./Images/reactjs-plain.svg" alt="an icon of the react logo" loading="lazy"
+            /></span>
+          </code>
         </div>
       </div>
-    </section>
-    <!-- PROJECTS SECTION -->
+    </div>
+    </div>
+  </section>
+  
+  <!-- PROJECTS SECTION -->
+  <a href="#projects"></a>
     <section id="projects" class="projects">
       <h1>my projects</h1>
-      <a href="#projects"></a>
       <!-- GRID CONTAINER -->
       <div class="container" data-aos="zoom-in" data-aos-duration="1500">
         <div class="card-container">
@@ -183,9 +220,9 @@
                   laboriosam!
                 </p>
                 <div class="icons">
-                  <img src="./Images/html-5-svgrepo-com.svg" alt="" />
-                  <img src="./Images/css-3-svgrepo-com.svg" alt="" />
-                  <img src="./Images/javascript-plain.svg" alt="" />
+                  <img src="./Images/html-5-svgrepo-com.svg" alt="html icon" loading="lazy"> />
+                  <img src="./Images/css-3-svgrepo-com.svg" alt="css icon" loading="lazy">/>
+                  <img src="./Images/javascript-plain.svg" alt="javascript icon" loading="lazy">/>
                 </div>
               </div>
               <button>
@@ -210,9 +247,9 @@
                   ipsum eveniet reprehenderit atque obcaecati totam!
                 </p>
                 <div class="icons">
-                  <img src="./Images/html-5-svgrepo-com.svg" alt="" />
-                  <img src="./Images/css-3-svgrepo-com.svg" alt="" />
-                  <img src="./Images/javascript-plain.svg" alt="" />
+                  <img src="./Images/html-5-svgrepo-com.svg" alt="html icon" />
+                  <img src="./Images/css-3-svgrepo-com.svg" alt="css icon" />
+                  <img src="./Images/javascript-plain.svg" alt="javascript icon" />
                 </div>
               </div>
               <button>
@@ -240,9 +277,9 @@
                   laboriosam!
                 </p>
                 <div class="icons">
-                  <img src="./Images/html-5-svgrepo-com.svg" alt="" />
-                  <img src="./Images/css-3-svgrepo-com.svg" alt="" />
-                  <img src="./Images/javascript-plain.svg" alt="" />
+                  <img src="./Images/html-5-svgrepo-com.svg" alt="html icon" />
+                  <img src="./Images/css-3-svgrepo-com.svg" alt="css icon" />
+                  <img src="./Images/javascript-plain.svg" alt="javascript icon" />
                 </div>
               </div>
               <button>
@@ -270,9 +307,9 @@
                   laboriosam!
                 </p>
                 <div class="icons">
-                  <img src="./Images/html-5-svgrepo-com.svg" alt="" />
-                  <img src="./Images/css-3-svgrepo-com.svg" alt="" />
-                  <img src="./Images/javascript-plain.svg" alt="" />
+                  <img src="./Images/html-5-svgrepo-com.svg" alt="html icon" />
+                  <img src="./Images/css-3-svgrepo-com.svg" alt="css icon" />
+                  <img src="./Images/javascript-plain.svg" alt="javascript icon" />
                 </div>
               </div>
               <button>
@@ -300,9 +337,9 @@
                   laboriosam!
                 </p>
                 <div class="icons">
-                  <img src="./Images/html-5-svgrepo-com.svg" alt="" />
-                  <img src="./Images/css-3-svgrepo-com.svg" alt="" />
-                  <img src="./Images/javascript-plain.svg" alt="" />
+                  <img src="./Images/html-5-svgrepo-com.svg" alt="html icon" />
+                  <img src="./Images/css-3-svgrepo-com.svg" alt="css icon" />
+                  <img src="./Images/javascript-plain.svg" alt="javascript icon" />
                 </div>
               </div>
               <button>
@@ -319,7 +356,9 @@
       <!-- GRID CONTAINER END -->
     </section>
     <!-- FOOTER -->
-    <footer></footer>
+    <footer>
+      <a target="_blank" href="https://icons8.com/icon/hGdCwhSHUe6L/python">Python</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
     <!-- MAIN JS TAG -->
     <script src="./mainScript.js"></script>
     <!-- ANIMATIONS LIBRARY -->
