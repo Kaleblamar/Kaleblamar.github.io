@@ -264,6 +264,7 @@ nav a:hover {
   perspective: 1000px;
   transform-style: preserve-3d;
   transform: rotateX(25deg) translateZ(200px);
+  white-space: nowrap;
 }
 .headingBox {
   position: relative;
@@ -286,7 +287,6 @@ nav a:hover {
   margin: 20px;
   text-shadow: 1px 1px 2px black;
   line-height: 1.5;
-  overflow: scroll;
 }
 #mountains {
   position: absolute;
@@ -960,7 +960,12 @@ footer::before {
   }
   .headingContainer {
     z-index: 0;
-    flex-wrap: nowrap;
+  }
+  .hero h1 {
+    font-size: 15px;
+  }
+  #subHeading {
+    font-size: 13px;
   }
 
   #mountains {
@@ -970,9 +975,9 @@ footer::before {
     left: 0;
     object-fit: fill;
   }
-  #layer2 {
-    /* display: none; */
-    /* object-fit: cover; */
+  #moon {
+    right: 0;
+    bottom: 0;
   }
   #stars {
     /* display: none; */

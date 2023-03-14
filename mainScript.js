@@ -8,7 +8,7 @@ let heading = document.querySelector(".headingContainer");
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   moon.style.top = value * 1.05 + "px";
-  stars.style.left = value * 0.15 + "px";
+  stars.style.left = value * 0.25 + "px";
   mountains.style.top = value * 0 + "px";
   // sky.style.left = value * 1.35 + "px";
   heading.style.left = value * 1.35 + "px";
