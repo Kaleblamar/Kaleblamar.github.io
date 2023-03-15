@@ -24,11 +24,16 @@
   /* font-family: "montserrat"; */
 }
 #btn-contact {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /* display: inline-block; */
   padding: 8px 30px;
-  /* position: relative; */
-  z-index: 999;
-  display: inline-block;
+  z-index: 1000;
   border-radius: 40px;
+}
+#btn-contact:hover {
+  cursor: pointer;
 }
 
 /* CONTACT FORM */
@@ -1157,6 +1162,7 @@ i {
   #moon {
     right: 0;
     bottom: 0;
+    object-fit: cover;
     /* display: none; */
   }
   #stars {
