@@ -1035,6 +1035,9 @@ i {
   }
   #sideMenu .sideMenuSocial {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
   }
   .sideSlide {
     transform: translateX(0%) !important;
