@@ -1078,10 +1078,10 @@ i {
 
   .hero {
     background-image: url(./Images/stefan-stefancik-G2ifDHnHZ6Y-unsplash.jpg);
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* perspective: 2000px; */
   }
   /* .hero::before {
