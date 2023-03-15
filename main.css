@@ -160,7 +160,8 @@ nav {
   align-items: center;
   padding: 25px;
   font-size: 14px;
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   z-index: 999;
   /* background-color: rgba(0, 0, 0, 0.189); */
   /* background-color: var(--background-color); */
@@ -1065,7 +1066,7 @@ i {
   }
 
   .hero {
-    /* background-image: url(./Images/clarisse-meyer-y54gnzC86lw-unsplash.jpg);
+    /* background-image: url(./Images/road\ to\ mountainsJPG\ Small.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
@@ -1151,11 +1152,12 @@ i {
     bottom: 0;
     right: 0;
     left: 0;
-    object-fit: fill;
+    /* object-fit: cover; */
   }
   #moon {
     right: 0;
     bottom: 0;
+    /* display: none; */
   }
   #stars {
     /* display: none; */
