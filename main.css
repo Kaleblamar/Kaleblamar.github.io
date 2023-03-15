@@ -775,6 +775,7 @@ footer ul {
   font-size: 18px;
   padding: 5px 10px;
   border-radius: 10px;
+  transition: 0.6s ease-in-out;
 }
 .siteMap a:hover {
   cursor: pointer;
@@ -996,7 +997,6 @@ i {
     text-transform: uppercase;
     font-size: large;
     color: var(--pink);
-
     position: relative;
   }
   #sideMenu ul li a::before {
@@ -1209,7 +1209,7 @@ i {
     color: var(--teal);
     padding: 5px 15px;
     border-radius: 25px;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .mobileViewFooterList a:hover {
     background-color: #333;
