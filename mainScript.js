@@ -68,6 +68,7 @@ const contact2 = document.querySelector(".contactLink2");
 contact.addEventListener("click", function () {
   form.classList.toggle("showForm");
 });
+
 contact2.addEventListener("click", function () {
   form.classList.toggle("showForm");
 });
