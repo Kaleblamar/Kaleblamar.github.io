@@ -555,15 +555,14 @@ nav a:hover {
   background: linear-gradient(to top, black, transparent);
 }
 .tech {
-  background-color: var(--background-color);
-  background-image: var(--purple-gradient);
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   padding: 50px;
   margin-top: 30px;
 }
 .tech ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   transition: 2s ease-in-out;
 }
