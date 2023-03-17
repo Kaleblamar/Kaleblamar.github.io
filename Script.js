@@ -60,19 +60,53 @@ hamburger.addEventListener("click", function () {
   sideMenu.classList.toggle("sideSlide");
 });
 
+//RESUME FORM
+const resume = document.querySelector(".resumeForm");
+const resumeLink = document.querySelectorAll(".resumeLink");
+const closeOut = document.querySelector(".close");
+function showResume() {
+  resume.classList.toggle("displayResume");
+}
+resumeLink.forEach((resumeLink) =>
+  resumeLink.addEventListener("click", showResume)
+);
+closeOut.addEventListener("click", function () {
+  resume.classList.remove("displayResume");
+});
+
 // CONTACT FORM
-const contact = document.querySelectorAll(".contactLink")[0];
+const contact = document.querySelectorAll(".contactLink");
 const form = document.querySelector(".formContainer");
 const contact2 = document.querySelector(".contactLink2");
-
-contact.addEventListener("click", function () {
-  form.classList.toggle("showForm");
-});
-
-contact2.addEventListener("click", function () {
-  form.classList.toggle("showForm");
-});
 const x = document.querySelector(".closeX");
+
+function showForm() {
+  form.classList.toggle("showForm");
+}
+contact.forEach((contact) => contact.addEventListener("click", showForm));
+console.log(showForm);
 x.addEventListener("click", function () {
   form.classList.remove("showForm");
 });
+
+// contact.addEventListener("click", function () {
+//   form.classList.toggle("showForm");
+// });
+
+// contact2.addEventListener("click", function () {
+//   form.classList.toggle("showForm");
+// });
+
+//RESUME FORM
+// const resume = document.querySelector(".resumeForm");
+// const resumeLink = document.querySelectorAll(".resumeLink");
+// const closeOut = document.querySelector(".close");
+// function showResume() {
+//   resume.classList.toggle("displayResume");
+// }
+// resumeLink.forEach((resumeLink) =>
+//   resumeLink.addEventListener("click", showResume)
+// );
+// closeOut.addEventListener("click", function () {
+//   resume.classList.remove("displayResume");
+// });
