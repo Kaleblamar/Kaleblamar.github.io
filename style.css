@@ -1239,6 +1239,9 @@ footer i {
   }
 }
 @media (min-width: 320px) and (max-width: 800px) {
+  /* ======================= */
+  /* RESUME FORM  */
+  /* ======================= */
   .resumeForm {
     width: 80%;
     left: 10%;
@@ -1249,6 +1252,9 @@ footer i {
   .resumeDownload {
     width: 80%;
   }
+  /* =========================== */
+  /*  CONTACT FORM */
+  /* =========================== */
   .formContainer {
     flex-direction: column;
     align-items: flex-end;
@@ -1284,10 +1290,15 @@ footer i {
   fieldset {
     width: 100%;
   }
-
+  /* ======================== */
+  /* DESKTOP VIEW NAVBAR  */
+  /* ======================== */
   #navBar {
     display: none;
   }
+  /* ======================= */
+  /* SIDE MENU */
+  /* ======================= */
   #sideMenu {
     display: flex;
     flex-direction: column;
@@ -1409,6 +1420,9 @@ footer i {
   .sideSlide {
     transform: translateX(0%) !important;
   }
+  /* ======================== */
+  /* HAMBURGER MENU BUTTON */
+  /* ======================== */
   .hamburgerContainer {
     display: flex;
     flex-direction: column;
@@ -1420,7 +1434,9 @@ footer i {
   .hamburgerContainer:hover {
     cursor: pointer;
   }
-
+  /* ========================== */
+  /* HERO SECTION ON MOBILE */
+  /* ========================== */
   .hero {
     background-image: url(./Images/stefan-stefancik-G2ifDHnHZ6Y-unsplash.jpg);
     background-size: cover;
@@ -1446,6 +1462,9 @@ footer i {
     line-height: 2;
     /* color: #c9c5cc; */
   }
+  /* =========================== */
+  /* ABOUT ME SECTION */
+  /* =========================== */
   .aboutMe {
     /* background-color: #001029; */
     position: relative;
@@ -1503,11 +1522,15 @@ footer i {
   #stars {
     display: none;
   }
-
+  /* ===================== */
+  /* PROJECTS SECTION */
+  /* ====================== */
   .projects h1 {
     border: none;
-    color: var(--teal);
   }
+  /* ====================== */
+  /* FOOTER */
+  /* ====================== */
   footer {
     display: flex;
     flex-direction: column;
@@ -1526,6 +1549,7 @@ footer i {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 100%;
+    height: auto;
     /* background-color: red; */
     text-align: center;
   }
