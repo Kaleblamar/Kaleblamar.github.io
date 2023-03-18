@@ -4,6 +4,7 @@ let moon = document.getElementById("moon");
 let mountains = document.getElementById("mountains");
 // let sky = document.getElementById("layer3");
 let heading = document.querySelector(".headingContainer");
+// let button = document.getElementById("btn")
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -12,6 +13,7 @@ window.addEventListener("scroll", function () {
   mountains.style.top = value * 0 + "px";
   // sky.style.left = value * 1.35 + "px";
   heading.style.left = value * 1.35 + "px";
+  // button.style.transform = scale
 });
 
 //3D-CARD
@@ -51,6 +53,12 @@ const bar1 = document.getElementById("bar1");
 const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
 const sideMenu = document.getElementById("sideMenu");
+// const menuList = document.querySelector(".sideMenuList");
+const listOne = document.getElementById("listOne");
+const listTwo = document.getElementById("listTwo");
+const listThree = document.getElementById("listThree");
+const listFour = document.getElementById("listFour");
+const listFive = document.getElementById("listFive");
 
 hamburger.addEventListener("click", function () {
   bar1.classList.toggle("topBarRotate");
@@ -58,6 +66,12 @@ hamburger.addEventListener("click", function () {
   bar3.classList.toggle("bottomBarRotate");
   hamburger.classList.toggle("menuSlide");
   sideMenu.classList.toggle("sideSlide");
+  listOne.classList.toggle("menuListSlider");
+  listTwo.classList.toggle("menuListSlider2");
+  listThree.classList.toggle("menuListSlider3");
+  listFour.classList.toggle("menuListSlider4");
+  listFive.classList.toggle("menuListSlider5");
+  // menuList.classList.toggle("menuListSlider");
 });
 
 //RESUME FORM
