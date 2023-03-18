@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap");
 @import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@1,900&display=swap";
 
 :root {
   --background-color: hsl(224, 32%, 12%);
@@ -14,6 +13,7 @@
     purple,
     blue
   );
+  --font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -69,7 +69,6 @@
   border-radius: 100px;
   text-align: center;
   background-color: transparent;
-  font-size: 25px;
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
@@ -83,8 +82,8 @@
 }
 #btn a {
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: var(--font-family);
+  font-weight: 900;
   text-decoration: none;
   color: transparent;
   background-image: linear-gradient(90deg, var(--teal), white);
@@ -687,18 +686,9 @@ nav a:hover {
 } */
 
 .sideBar h1 {
-  font-family: "orbitron", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-/* .sideBar::after {
-  content: url(./Images/me\ no\ background.png);
-  position: absolute;
-  width: 100px;
-  bottom: 10px;
-  opacity: 0.2;
-  z-index: 10;
-} */
 .sideBar span {
-  /* color: var(--teal); */
   background-image: linear-gradient(-45deg, white, var(--teal));
   -webkit-background-clip: text;
   color: transparent;
@@ -953,14 +943,6 @@ nav a:hover {
   opacity: 0.75;
 } */
 
-/* .back-of-card button a::after {
-  font-family: "Font Awesome";
-  content: "\f135";
-  display: inline-block;
-  padding-left: 10px;
-  font-weight: 900;
-  
-} */
 /* ============================= */
 /* GRID ITEMS/CARDS */
 /* ============================= */
@@ -1181,6 +1163,9 @@ footer i {
 /* MEDIA QUERIES */
 /* ========================================= */
 @media (min-width: 1400px) {
+  /* =========== */
+  /* CONTACT FORM */
+  /* =========== */
   .formContainer {
     width: 50%;
     /* left: 33%; */
@@ -1207,15 +1192,15 @@ footer i {
   .sideBar p {
     line-height: 3;
   }
-  .myPhoto {
-    /* width: 300px;
-    height: 400px; */
-  }
   .card-box {
     margin-right: 250px;
   }
 }
 @media (min-width: 801px) and (max-width: 1319px) {
+  /* ============== */
+  /* CONTACT FORM */
+  /* ============== */
+
   .formContainer {
     flex-direction: column;
     align-items: flex-start;
@@ -1234,6 +1219,9 @@ footer i {
   .contactForm input {
     width: 100%;
   }
+  /* ============ */
+  /* CARDS IN PROJECTS */
+  /* ============ */
   .back-of-card button {
     width: 90%;
   }
@@ -1307,7 +1295,7 @@ footer i {
   #sideMenu ul {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     height: 100vh;
     padding: 30px 20px;
     transition: 1 ease-in-out;
@@ -1416,6 +1404,7 @@ footer i {
     justify-content: space-evenly;
     width: 100%;
     list-style: none;
+    gap: 20px;
   }
   .sideSlide {
     transform: translateX(0%) !important;
@@ -1445,9 +1434,6 @@ footer i {
     /* background-attachment: fixed; */
     /* perspective: 2000px; */
   }
-  /* .hero::before {
-    background: linear-gradient(to top, whitesmoke, transparent);
-  } */
 
   .hero h1 {
     font-size: 20px;
@@ -1461,6 +1447,27 @@ footer i {
     padding: 20px;
     line-height: 2;
     /* color: #c9c5cc; */
+  }
+  .headingContainer {
+    z-index: 0;
+  }
+
+  #mountains {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* object-fit: cover; */
+    display: none;
+  }
+  #moon {
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    display: none;
+  }
+  #stars {
+    display: none;
   }
   /* =========================== */
   /* ABOUT ME SECTION */
@@ -1501,27 +1508,7 @@ footer i {
     padding: 10px;
     width: 100%;
   }
-  .headingContainer {
-    z-index: 0;
-  }
 
-  #mountains {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* object-fit: cover; */
-    display: none;
-  }
-  #moon {
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
-    display: none;
-  }
-  #stars {
-    display: none;
-  }
   /* ===================== */
   /* PROJECTS SECTION */
   /* ====================== */
