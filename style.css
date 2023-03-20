@@ -52,90 +52,6 @@
  
 } */
 
-.headingContainerMobile {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 0;
-  white-space: nowrap;
-  text-align: center;
-}
-#headingMobile {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.5;
-  filter: drop-shadow(0 0 20px black);
-  background-image: linear-gradient(90deg, white, var(--teal), white);
-  -webkit-background-clip: text;
-  color: transparent;
-  margin: 20px;
-}
-#subHeadingMobile {
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.5;
-  filter: drop-shadow(0 0 20px black);
-  background-image: linear-gradient(
-    90deg,
-    var(--white),
-    var(--teal),
-    var(--white)
-  );
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.btn-container {
-  position: absolute;
-  bottom: 150px;
-  z-index: 900;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#btn {
-  position: relative;
-  width: 200px;
-  padding: 8px 30px;
-  z-index: 900;
-  border: none;
-  border-radius: 100px;
-  text-align: center;
-  background-color: transparent;
-  background-color: var(--background-color);
-  background-image: var(--purple-gradient);
-  background-blend-mode: multiply;
-  transition: 0.3s ease-in-out;
-  opacity: 0.8;
-}
-#btn:hover {
-  cursor: pointer;
-  transform: scale(0.9);
-  filter: drop-shadow(0 0 10px var(--teal));
-}
-#btn:active {
-  transform: scale(0.5);
-}
-
-#btn a {
-  font-size: 20px;
-  font-family: var(--font-family);
-  font-weight: 900;
-  text-decoration: none;
-  color: var(--pink);
-}
 /* ======================= */
 /* RESUME FORM */
 /* ======================= */
@@ -151,9 +67,7 @@
   overflow: hidden;
   filter: drop-shadow(0 0 8px var(--teal));
   position: absolute;
-  top: 100px;
-  /* left: 25%; */
-  bottom: 0;
+  top: 50px;
   right: 40px;
   z-index: 1002;
   animation: popin 1.5s ease-in-out;
@@ -518,6 +432,92 @@ nav a:hover {
 /* ================================== */
 /* HERO SECTION */
 /* ================================== */
+.headingContainerMobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  white-space: nowrap;
+  text-align: center;
+  filter: blur(0px);
+}
+#headingMobile {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+  filter: drop-shadow(0 0 20px black);
+  background-image: linear-gradient(90deg, white, var(--teal), white);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 20px;
+}
+#subHeadingMobile {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+  filter: drop-shadow(0 0 20px black);
+  background-image: linear-gradient(
+    90deg,
+    var(--white),
+    var(--teal),
+    var(--white)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 150px;
+  z-index: 900;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  position: relative;
+  width: 200px;
+  padding: 8px 30px;
+  z-index: 900;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  background-color: transparent;
+  background-color: var(--background-color);
+  background-image: var(--purple-gradient);
+  background-blend-mode: multiply;
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+#btn:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  filter: drop-shadow(0 0 10px var(--teal));
+}
+#btn:active {
+  transform: scale(0.5);
+}
+
+#btn a {
+  font-size: 20px;
+  font-family: var(--font-family);
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--pink);
+}
+
 .loadingContainer {
   display: flex;
   justify-content: center;
@@ -1375,13 +1375,6 @@ footer i {
   }
 }
 @media (min-width: 320px) and (max-width: 800px) {
-  .headingContainer {
-    display: none;
-  }
-  .headingContainerMobile {
-    display: flex;
-  }
-
   /* ======================= */
   /* RESUME FORM  */
   /* ======================= */
@@ -1593,8 +1586,11 @@ footer i {
     /* background-attachment: fixed; */
     /* perspective: 2000px; */
   }
+  .headingContainer {
+    display: none;
+  }
   .headingContainerMobile {
-    filter: blur(0px);
+    display: flex;
   }
 
   /* .hero h1 {
