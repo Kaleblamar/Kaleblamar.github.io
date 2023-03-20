@@ -313,11 +313,9 @@ legend {
 }
 .contactSide {
   display: flex;
-  flex-direction: row-reverse;
 }
 .contactSide img {
   display: block;
-  margin: auto;
   width: 100%;
   height: 100%;
   opacity: 0.3;
@@ -1316,7 +1314,7 @@ footer i {
 
   .formContainer {
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: center; */
   }
 
   .contactSide img {
@@ -1327,14 +1325,14 @@ footer i {
   }
   .contactForm,
   textarea {
-    width: 95%;
+    width: 100%;
   }
   .contactForm input {
     width: 100%;
   }
-  /* ============ */
+  /* ===========================*/
   /* CARDS IN PROJECTS */
-  /* ============ */
+  /* =========================== */
   .back-of-card button {
     width: 90%;
   }
@@ -1377,10 +1375,10 @@ footer i {
   /* =========================== */
   .formContainer {
     flex-direction: column;
-    align-items: flex-end;
+    /* align-items: center; */
     padding: 10px;
     width: 90%;
-    left: 20px;
+    left: 15px;
     top: 8%;
     background-blend-mode: multiply;
     border: none;
@@ -1393,16 +1391,19 @@ footer i {
     width: 100%;
   }
   .contactSide {
-    width: 95%;
+    width: 100%;
     padding: 15px;
+    /* background-color: #bd2c00; */
   }
+
   .contactSide img {
     width: 33%;
     display: block;
-    margin: 0;
+    /* margin-right: 300px; */
+    /* background-color: blue; */
   }
   .contactForm {
-    width: 90%;
+    width: 99%;
   }
   .contactForm input {
     width: 100%;
@@ -1643,11 +1644,11 @@ footer i {
     padding: 10px;
     width: 100%;
   }
-  .my-card {
+  /* .my-card {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   #my-Card-Container {
     margin: 0;
   }
