@@ -107,6 +107,7 @@ x.addEventListener("click", function () {
 const loadText = document.querySelector(".loadText");
 const hero = document.querySelector(".hero");
 const mobileHeadingBox = document.querySelector(" .headingContainerMobile ");
+const button = document.querySelector(".btn-container");
 
 let load = 0;
 let int = setInterval(blurring, 30);
@@ -121,6 +122,7 @@ function blurring() {
   loadText.style.opacity = scale(load, 0, 100, 1, 0);
   hero.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
   mobileHeadingBox.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+  button.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
 }
 
 const scale = (num, in_min, in_max, out_min, out_max) => {
