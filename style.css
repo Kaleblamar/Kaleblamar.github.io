@@ -51,6 +51,7 @@
   border-top: 60px solid transparent;
  
 } */
+
 .headingContainerMobile {
   display: none;
   flex-direction: column;
@@ -675,7 +676,7 @@ nav a:hover {
 } */
 .aboutMeContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 300px;
   position: relative;
@@ -692,6 +693,9 @@ nav a:hover {
   background: linear-gradient(to top, black, transparent);
 }
 .tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
   margin: 100px 0;
   width: 100%;
@@ -780,25 +784,27 @@ nav a:hover {
 /* ============================== */
 /* 3D-CARD */
 /* ============================== */
-.my-card {
+/* .my-card {
   background-color: #000;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   height: 60vh;
   width: 100%;
-}
+  background-color: blue;
+} */
 .card-box {
   /* background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply; */
   height: 50vh;
-  width: 100%;
+  min-width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 20px;
+  /* background-color: #bd2c00; */
 }
 #my-Card-Container {
   display: flex;
@@ -817,7 +823,7 @@ nav a:hover {
   /* transform: perspective(5000px) rotateY(20deg) rotateX(20deg); */
   transform: perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX));
   overflow: visible;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .myName {
