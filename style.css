@@ -1636,6 +1636,14 @@ footer i {
     padding: 10px;
     width: 100%;
   }
+  .my-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #my-Card-Container {
+    margin: 0;
+  }
 
   /* ===================== */
   /* PROJECTS SECTION */
