@@ -14,6 +14,8 @@
     blue
   );
   --font-family: "Montserrat", sans-serif;
+  --purple: #7f00ff;
+  --blue: #0096ff;
 }
 
 * {
@@ -25,13 +27,6 @@
   /* font-family: , sans-serif; */
 }
 
-.btn-container {
-  position: absolute;
-  bottom: 150px;
-  z-index: 900;
-  width: 100%;
-  /* background-color: red; */
-}
 /* .box p {
   font-family: "montserrat", sans-serif;
   font-weight: bold;
@@ -41,6 +36,7 @@
   text-align: center;
   position: relative;
   top: -80px;
+
   right: 50px;
 }
 .box p::after {
@@ -55,13 +51,65 @@
   border-top: 60px solid transparent;
  
 } */
+.headingContainerMobile {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(30deg) translateZ(200px);
+  white-space: nowrap;
+}
+#headingMobile {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+  filter: drop-shadow(0 0 20px black);
+  transform-style: preserve-3d;
+  background-image: linear-gradient(90deg, white, var(--teal), white);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 20px;
+}
+#subHeadingMobile {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+  filter: drop-shadow(0 0 20px black);
+  transform-style: preserve-3d;
+  background-image: linear-gradient(
+    90deg,
+    var(--white),
+    var(--teal),
+    var(--white)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 150px;
+  z-index: 900;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 #btn {
   position: relative;
-  /* bottom: 250px; */
-  /* left: 40%; */
-  display: block;
-  margin: auto;
   width: 200px;
   padding: 8px 30px;
   z-index: 900;
@@ -73,21 +121,23 @@
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
   transition: 0.3s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 #btn:hover {
   cursor: pointer;
   transform: scale(0.9);
-  filter: drop-shadow(0 0 10px red);
+  filter: drop-shadow(0 0 10px var(--teal));
 }
+#btn:active {
+  transform: scale(0.5);
+}
+
 #btn a {
   font-size: 20px;
   font-family: var(--font-family);
   font-weight: 900;
   text-decoration: none;
-  color: transparent;
-  background-image: linear-gradient(90deg, var(--teal), white);
-  -webkit-background-clip: text;
+  color: var(--pink);
 }
 /* ======================= */
 /* RESUME FORM */
@@ -108,7 +158,7 @@
   /* left: 25%; */
   bottom: 0;
   right: 40px;
-  z-index: 1000;
+  z-index: 1002;
   animation: popin 1.5s ease-in-out;
   transition: 1.5s ease-in-out;
 }
@@ -125,14 +175,14 @@
 }
 .close {
   display: block;
-  margin-left: 95%;
+  margin-left: 90%;
   margin-bottom: 10px;
-  width: 40px;
+  width: 50px;
   background-color: #000;
   border: none;
   border-radius: 10px;
   color: var(--pink);
-  font-size: 20px;
+  font-size: 25px;
   transition: 0.3s ease-in-out;
 }
 .resumeForm img {
@@ -160,7 +210,7 @@
 .resumeForm button:hover {
   cursor: pointer;
   transform: scale(0.9);
-  filter: drop-shadow(0 0 8px var(--teal));
+  filter: drop-shadow(0 0 8px var(--pink));
 }
 .resumeForm button a {
   text-decoration: none;
@@ -185,20 +235,17 @@
   display: none;
 }
 .formContainer {
-  justify-content: center;
-  align-items: center;
+  display: none;
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   width: 40%;
   border-radius: 10px;
-  display: none;
   position: absolute;
-  top: 100px;
+  top: 50px;
   right: 100px;
-  /* left: ; */
-  z-index: 1000;
+  z-index: 1002;
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
   filter: drop-shadow(0 0 5px var(--teal));
@@ -213,6 +260,9 @@
   100% {
     transform: scale(1);
   }
+}
+.formButtonsContainer {
+  display: flex;
 }
 
 .closeX {
@@ -237,12 +287,15 @@
 
 .showForm {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 textarea {
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background-color: black;
   color: var(--teal);
+  width: 100%;
 }
 
 label {
@@ -252,35 +305,39 @@ label {
 
 fieldset {
   border: none;
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
 }
 legend {
-  color: var(--teal);
+  color: var(--pink);
   text-transform: uppercase;
   text-align: center;
+}
+.contactSide {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .contactSide img {
   display: block;
   margin: auto;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.3;
   filter: drop-shadow(0 0 30px black);
   /* background-color: blue; */
 }
-.contactSide {
-  width: 100%;
-  height: 100%;
-  /* background-color: red; */
-}
+
 .contactForm {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  /* background-color: red; */
 }
 
 .contactForm input {
   border: none;
   border-radius: 10px;
-  padding: 10px;
+  padding: 15px;
   margin: 10px auto;
   width: 100%;
   background-color: black;
@@ -290,7 +347,8 @@ legend {
   color: var(--teal);
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="reset"] {
   background-color: #000;
   color: var(--pink);
   border-radius: 20px;
@@ -298,10 +356,16 @@ input[type="submit"] {
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
 }
-input[type="submit"]:hover {
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   cursor: pointer;
   transform: scale(0.9);
-  filter: drop-shadow(0 0 5px var(--teal));
+  filter: drop-shadow(0 0 5px var(--pink));
+}
+input[type="submit"]:active,
+input[type="reset"]:active {
+  transform: scale(0.5);
 }
 /* ===================================== */
 /* SIDE MENU DISPLAY DESKTOP */
@@ -328,7 +392,7 @@ input[type="submit"]:hover {
   z-index: 999;
   width: 100%;
   height: auto;
-  z-index: 10001;
+  z-index: 1001;
   position: fixed;
   filter: drop-shadow(0 0 10px black);
   transition: 0.8s ease-in-out;
@@ -339,8 +403,8 @@ input[type="submit"]:hover {
   height: 5px;
   border-radius: 10px;
   background-color: var(--background-color);
-  background-image: linear-gradient(90deg, var(--teal), white);
-  background-blend-mode: hard-light;
+  background-image: linear-gradient(-45deg, var(--teal), white);
+  background-blend-mode: lighten;
   transition: 0.3s ease-in-out;
 }
 #bar2 {
@@ -416,6 +480,9 @@ nav ul li:nth-of-type(1)::before {
   font-weight: 900;
   padding-right: 5px;
 }
+nav ul li:nth-of-type(1):hover::before {
+  color: var(--pink);
+}
 nav ul li a:hover::after {
   transform: scale(1);
   /* transform-origin: left; */
@@ -483,16 +550,22 @@ nav a:hover {
   text-align: center;
   filter: drop-shadow(0 0 20px black);
   transform-style: preserve-3d;
-  background-image: linear-gradient(90deg, white, var(--teal), white);
+  background-image: linear-gradient(
+    30deg,
+    white,
+    var(--teal),
+    white,
+    var(--teal),
+    white
+  );
   -webkit-background-clip: text;
+  color: transparent;
   color: transparent;
 }
 
 .headingContainer {
   display: flex;
   justify-content: center;
-  /* flex-direction: column;  */
-  /* justify-content: flex-start; */
   align-items: center;
   position: absolute;
   top: 0;
@@ -518,7 +591,13 @@ nav a:hover {
 
 #subHeading {
   transform-style: preserve-3d;
-  background-image: linear-gradient(60deg, white, var(--teal), white);
+  background-image: linear-gradient(
+    60deg,
+    white,
+    var(--teal),
+    white,
+    var(--teal)
+  );
   -webkit-background-clip: text;
   color: transparent;
   font-size: 20px;
@@ -576,7 +655,6 @@ nav a:hover {
   height: 100%;
   object-fit: cover;
   z-index: -3;
-  /* display: none; */
 }
 /* =============================== */
 /* ABOUT ME SECTION */
@@ -586,6 +664,9 @@ nav a:hover {
   z-index: 5;
   background-color: #000;
   /* margin-top: 300px; */
+}
+.aboutMe p {
+  font-family: var(--font-family);
 }
 
 /* @keyframes fadein {
@@ -617,7 +698,6 @@ nav a:hover {
 .tech {
   padding: 50px;
   margin: 100px 0;
-  /* background-color: red; */
   width: 100%;
 }
 .tech ul {
@@ -640,12 +720,13 @@ nav a:hover {
   background-blend-mode: multiply;
   border-radius: 30px;
   padding: 40px;
-  width: 50%;
+  width: 80%;
   height: 100%;
   color: white;
   line-height: 2.5;
   font-family: sans-serif;
   /* animation: slide 1.5s ease-in-out forwards; */
+  /* margin: auto; */
 }
 .myPhoto {
   opacity: 0.5 !important;
@@ -666,12 +747,21 @@ nav a:hover {
   gap: 20px;
   list-style: none;
   width: 40%;
+  height: auto;
+  transition: 1.5s ease-in-out;
   /* margin-right: 50px; */
   /* background-color: red; */
+}
+.box ul li {
+  padding: 10px;
+  /* background-color: #bd2c00; */
 }
 
 .box ul li a i {
   font-size: 40px;
+  padding: 2px;
+  color: var(--purple);
+  border-radius: 8px;
 }
 
 /* @keyframes slide {
@@ -689,9 +779,7 @@ nav a:hover {
   font-family: "Montserrat", sans-serif;
 }
 .sideBar span {
-  background-image: linear-gradient(-45deg, white, var(--teal));
-  -webkit-background-clip: text;
-  color: transparent;
+  color: var(--teal);
 }
 /* ============================== */
 /* 3D-CARD */
@@ -804,9 +892,7 @@ nav a:hover {
 .projects h1 {
   font-size: 40px;
   font-family: "montserrat", sans-serif;
-  color: transparent;
-  background-image: linear-gradient(90deg, white, var(--teal));
-  -webkit-background-clip: text;
+  color: var(--teal);
   width: 100%;
   margin: 150px 0 20px 0;
   border-bottom: 10px solid;
@@ -873,6 +959,7 @@ nav a:hover {
   color: white;
   text-align: center;
   transform: rotateY(180deg);
+  overflow-y: hidden !important;
 }
 
 .card-front,
@@ -891,10 +978,10 @@ nav a:hover {
   line-height: 2;
 }
 .back-face-info {
-  height: 75%;
+  height: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   /* background-color: red; */
 }
@@ -904,7 +991,8 @@ nav a:hover {
   gap: 10px;
 }
 .icons img {
-  width: 80%;
+  width: 40px;
+  height: 40px;
 }
 .back-of-card button {
   width: 50%;
@@ -914,6 +1002,7 @@ nav a:hover {
   border-radius: 20px;
   border: none;
   transition: 0.3s ease-in-out;
+  margin-bottom: 15px;
 }
 .back-of-card button:hover {
   cursor: pointer;
@@ -932,6 +1021,16 @@ nav a:hover {
   font-weight: 900;
   font-style: normal;
   padding-right: 8px;
+}
+.back-of-card h4 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: var(--font-family);
+  color: var(--teal);
+}
+.back-of-card p {
+  font-family: var(--font-family);
+  font-size: 16px;
 }
 /* .back-of-card button a::before {
   content: "\F845";
@@ -952,6 +1051,7 @@ nav a:hover {
   background-position-y: top;
   background-position-x: center;
   background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
 }
 
 .item2 {
@@ -994,6 +1094,16 @@ nav a:hover {
   border-radius: 10px;
   transition: 0.3s ease-in-out;
 }
+
+.item6 {
+  background: url(./Images/lePain\ pic.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
 /* ==================================== */
 /* FOOTER */
 /* ==================================== */
@@ -1034,6 +1144,8 @@ footer ul {
   gap: 20px;
   padding: 80px 0;
   color: var(--pink);
+  /* color: #5d3fd3; */
+  /* color: #7f00ff; */
   font-size: 18px;
 }
 .siteMap p {
@@ -1054,6 +1166,8 @@ footer ul {
   overflow: visible;
 }
 .siteMap a {
+  /* color: var(--teal); */
+  /* color: #1f51ff; */
   color: var(--teal);
   text-decoration: none;
   font-size: 18px;
@@ -1063,7 +1177,7 @@ footer ul {
 }
 .siteMap a:hover {
   cursor: pointer;
-  background-color: var(--pink);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .logoContainerFooter {
   font-size: 25px;
@@ -1114,23 +1228,20 @@ footer ul {
 }
 footer i {
   font-size: 40px;
-  /* color: var(--pink); */
-  border-radius: 10px;
+  color: var(--pink);
+  /* color: #1f51ff; */
 }
 .fa-linkedin:hover {
   background-color: var(--white);
   color: rgb(5, 115, 249);
-  border-radius: 5px;
 }
 .fa-facebook:hover {
   background-color: white;
   color: rgb(5, 115, 249);
-  border-radius: 10px;
 }
 .fa-github:hover {
   background-color: var(--background-color);
   color: #bd2c00;
-  border-radius: 5px;
 }
 .fa-instagram:hover {
   background: radial-gradient(
@@ -1207,7 +1318,7 @@ footer i {
   }
 
   .contactSide img {
-    width: 25%;
+    width: 40%;
     display: block;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -1226,13 +1337,31 @@ footer i {
     width: 90%;
   }
 }
+@media (max-width: 1030px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .sideBar {
+    width: 100%;
+  }
+  .card-box {
+    justify-content: center;
+  }
+}
 @media (min-width: 320px) and (max-width: 800px) {
+  .headingContainer {
+    display: none;
+  }
+  .headingContainerMobile {
+    display: flex;
+  }
+
   /* ======================= */
   /* RESUME FORM  */
   /* ======================= */
   .resumeForm {
-    width: 80%;
-    left: 10%;
+    width: 90%;
+    left: 20px;
   }
   .resumeContainer {
     flex-direction: column;
@@ -1240,6 +1369,7 @@ footer i {
   .resumeDownload {
     width: 80%;
   }
+
   /* =========================== */
   /*  CONTACT FORM */
   /* =========================== */
@@ -1247,8 +1377,8 @@ footer i {
     flex-direction: column;
     align-items: flex-end;
     padding: 10px;
-    width: 70%;
-    left: 12%;
+    width: 90%;
+    left: 20px;
     top: 8%;
     background-blend-mode: multiply;
     border: none;
@@ -1362,7 +1492,7 @@ footer i {
     text-decoration: none;
     text-transform: uppercase;
     font-size: large;
-    color: var(--pink);
+    color: var(--teal);
     position: relative;
   }
   #sideMenu ul li a::before {
@@ -1373,7 +1503,7 @@ footer i {
     right: 0;
     left: 0;
     height: 2px;
-    background-color: var(--teal);
+    background-color: var(--pink);
     transition: 0.5s ease-in-out;
     transform: scale(0);
   }
@@ -1382,7 +1512,7 @@ footer i {
   }
   #sideMenu i {
     font-size: 30px;
-    color: #333;
+    color: var(--purple);
   }
   #sideMenu .fa-facebook:hover {
     background-color: white;
@@ -1486,6 +1616,8 @@ footer i {
     align-items: center;
     justify-content: center;
     margin-top: 200px;
+    position: relative;
+    /* z-index: 900; */
   }
   .aboutMeContainer::before {
     content: "";
@@ -1495,6 +1627,7 @@ footer i {
     right: 0;
     left: 0;
     background: linear-gradient(to bottom, black, transparent);
+    /* z-index: 98; */
   }
 
   .sideBar {
