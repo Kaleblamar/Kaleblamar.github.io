@@ -535,6 +535,7 @@ nav a:hover {
   font-size: 50px;
   color: #fff;
   font-family: var(--font-family);
+  /* font-weight: 600; */
 }
 .hero {
   /* background-image: url(../Images/Earth.jpg);
@@ -1592,23 +1593,24 @@ footer i {
     /* background-attachment: fixed; */
     /* perspective: 2000px; */
   }
+  .headingContainerMobile {
+    filter: blur(0px);
+  }
 
-  .hero h1 {
+  /* .hero h1 {
     font-size: 20px;
     text-shadow: 8px 8px 12px hsl(0, 0%, 0%);
     line-height: 2;
-    /* color: #c9c5cc; */
   }
   #subHeading {
     font-size: 18px;
     text-shadow: 8px 8px 12px black;
     padding: 20px;
     line-height: 2;
-    /* color: #c9c5cc; */
   }
   .headingContainer {
     z-index: 0;
-  }
+  } */
 
   #mountains {
     top: 0;
