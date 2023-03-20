@@ -155,7 +155,7 @@
   border-radius: 10px;
   position: absolute;
   top: 50px;
-  right: 100px;
+  right: 40px;
   z-index: 1002;
   padding: 20px;
   animation: displayForm 1.5s ease-in-out forwards !important;
