@@ -913,7 +913,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  margin: auto;
+  margin: 50px auto;
   width: 60%;
 }
 /* =================================== */
