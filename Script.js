@@ -104,6 +104,8 @@ x.addEventListener("click", function () {
   form.classList.remove("showForm");
 });
 
+//Loading Screen
+
 const loadText = document.querySelector(".loadText");
 const hero = document.querySelector(".hero");
 const mobileHeadingBox = document.querySelector(" .headingContainerMobile ");

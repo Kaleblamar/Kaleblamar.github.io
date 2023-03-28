@@ -609,6 +609,8 @@ nav a:hover {
   align-items: center;
   width: min-content;
   width: 100%;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(25deg) translateZ(175px); */
   /* z-index: 7; */
 }
 
@@ -764,7 +766,7 @@ nav a:hover {
 .tech ul li {
   transform: 3s ease;
 }
-.sideBar {
+.summary {
   background-color: var(--background-color);
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
@@ -774,7 +776,7 @@ nav a:hover {
   height: 100%;
   color: white;
   line-height: 2.5;
-  font-family: sans-serif;
+  font-family: var(--font-family);
   /* animation: slide 1.5s ease-in-out forwards; */
   /* margin: auto; */
 }
@@ -827,10 +829,10 @@ nav a:hover {
   }
 } */
 
-.sideBar h1 {
+.summary h1 {
   font-family: "Montserrat", sans-serif;
 }
-.sideBar span {
+.summary span {
   color: var(--teal);
 }
 /* ============================== */
@@ -971,10 +973,10 @@ nav a:hover {
 /* ======================================= */
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
   margin: 50px auto;
-  width: 60%;
+  width: 95%;
 }
 /* =================================== */
 /* CARDS AND CARD FLIP */
@@ -1153,6 +1155,26 @@ nav a:hover {
 
 .item6 {
   background: url(./Images/lePain\ pic.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.item7 {
+  background: url(./Images/TextAdventure.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.item8 {
+  background: url(./Images/Stopwatch.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -1355,8 +1377,7 @@ footer i {
   .headingContainer {
     margin-top: 100px;
   }
-
-  .sideBar p {
+  .summary p {
     line-height: 3;
   }
   .card-box {
@@ -1395,9 +1416,10 @@ footer i {
 }
 @media (max-width: 1030px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 98%;
   }
-  .sideBar {
+  .summary {
     width: 100%;
   }
   .card-box {
@@ -1686,7 +1708,7 @@ footer i {
     /* z-index: 98; */
   }
 
-  .sideBar {
+  .summary {
     width: 100%;
     background: none;
   }
@@ -1747,3 +1769,15 @@ footer i {
     padding: 20px;
   }
 }
+
+/* @media (max-height: 475px) {
+  #heading {
+    font-size: 20px;
+  }
+  #subheading {
+    font-size: 18px;
+  }
+  .btn-container {
+    bottom: 10px;
+  }
+} */
