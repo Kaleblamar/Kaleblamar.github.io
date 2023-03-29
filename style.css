@@ -151,7 +151,7 @@
   background-image: var(--purple-gradient);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  width: 40%;
+  width: 600px;
   border-radius: 10px;
   position: absolute;
   top: 50px;
@@ -210,8 +210,10 @@ textarea {
 }
 
 label {
+  font-family: var(--font-family);
   color: var(--pink);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  /* font-size: 14px; */
 }
 
 fieldset {
@@ -219,25 +221,15 @@ fieldset {
   display: flex;
   justify-content: center;
   /* background-color: blue; */
+  /* width: 50%; */
 }
 legend {
+  font-family: var(--font-family);
+  font-weight: 700;
   color: var(--pink);
   text-transform: uppercase;
   text-align: center;
-}
-.contactSide {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-.contactSide img {
-  width: 80%;
-  display: block;
-  /* width: 100%; */
-  /* height: 100%; */
-  opacity: 0.3;
-  filter: drop-shadow(0 0 30px black);
-  /* background-color: blue; */
+  font-size: 18px;
 }
 
 .contactForm {
@@ -257,6 +249,7 @@ legend {
 }
 ::placeholder {
   color: var(--teal);
+  font-family: var(--font-family);
 }
 
 input[type="submit"],
@@ -305,7 +298,6 @@ input[type="reset"]:active {
   width: 100%;
   height: auto;
   z-index: 1001;
-  position: fixed;
   filter: drop-shadow(0 0 10px black);
   transition: 0.8s ease-in-out;
 }
@@ -314,23 +306,25 @@ input[type="reset"]:active {
   width: 33px;
   height: 5px;
   border-radius: 10px;
-  background-color: var(--background-color);
-  background-image: linear-gradient(-45deg, var(--teal), white);
-  background-blend-mode: lighten;
-  transition: 0.3s ease-in-out;
+  background-color: var(--teal);
+  /* background-image: linear-gradient(-45deg, var(--teal), white); */
+  /* background-blend-mode: multiply; */
+  transition: 0.5s ease-in-out;
 }
 #bar2 {
   margin: 5px 0;
   transition: 0.3s ease-in-out;
 }
 .topBarRotate {
-  transform: rotate(45deg) translate(0, 15px);
+  transform: rotate(45deg) translate(0, 15px) scale(0.7);
+  background-color: var(--pink);
 }
 .bottomBarRotate {
-  transform: rotate(-45deg) translate(0, -15px);
+  transform: rotate(-45deg) translate(0, -15px) scale(0.7);
+  background-color: var(--pink);
 }
 .middleBarSlide {
-  transform: translateX(-1000px);
+  opacity: 0;
 }
 .menuSlide {
   transform: translateX(40%);
@@ -481,9 +475,11 @@ nav a:hover {
   bottom: 150px;
   z-index: 900;
   width: 100%;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: red; */
 }
 
 #btn {
@@ -787,9 +783,17 @@ nav a:hover {
   border-radius: 30px;
   position: relative;
   z-index: 0;
-  filter: brightness(50%);
+  filter: brightness(30%);
   /* animation: fadein 3s ease-in; */
 }
+/* video {
+  position: absolute;
+  left: 40px;
+  width: 500px;
+  z-index: -1;
+  filter: brightness(20%);
+  border-radius: 30px;
+} */
 .box {
   display: flex;
   justify-content: space-between;
@@ -804,7 +808,6 @@ nav a:hover {
   height: auto;
   transition: 1.5s ease-in-out;
   /* margin-right: 50px; */
-  /* background-color: red; */
 }
 .box ul li {
   padding: 10px;
@@ -838,15 +841,7 @@ nav a:hover {
 /* ============================== */
 /* 3D-CARD */
 /* ============================== */
-/* .my-card {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  width: 100%;
-  background-color: blue;
-} */
+
 .card-box {
   /* background-color: var(--background-color);
   background-image: var(--purple-gradient);
@@ -1355,23 +1350,11 @@ footer i {
   /* =========== */
   /* CONTACT FORM */
   /* =========== */
-  .formContainer {
-    width: 50%;
-    /* left: 33%; */
-  }
-  .contactForm {
-    width: 90%;
-  }
+
   .contactForm input,
   textarea {
     padding: 20px;
     width: 100%;
-  }
-  .contactSide {
-    width: 100%;
-  }
-  .contactSide img {
-    width: 60%;
   }
 
   .headingContainer {
@@ -1389,17 +1372,6 @@ footer i {
   /* CONTACT FORM */
   /* ============== */
 
-  .formContainer {
-    flex-direction: column;
-    /* align-items: center; */
-  }
-
-  .contactSide img {
-    width: 40%;
-    display: block;
-    /* margin-left: 20px; */
-    margin-bottom: 10px;
-  }
   .contactForm,
   textarea {
     width: 100%;
@@ -1460,18 +1432,6 @@ footer i {
   .mobile {
     display: block;
     width: 100%;
-  }
-  .contactSide {
-    width: 100%;
-    padding: 15px;
-    /* background-color: #bd2c00; */
-  }
-
-  .contactSide img {
-    width: 33%;
-    display: block;
-    /* margin-right: 300px; */
-    /* background-color: blue; */
   }
   .contactForm {
     width: 99%;
