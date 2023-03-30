@@ -5,7 +5,6 @@ let mountains = document.getElementById("mountains");
 // let sky = document.getElementById("layer3");
 let heading = document.querySelector(".headingContainer");
 let mobileHeading = document.querySelector(".headingContainerMobile");
-// let button = document.getElementById("btn");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
@@ -13,8 +12,9 @@ window.addEventListener("scroll", function () {
   stars.style.left = value * 0.25 + "px";
   mountains.style.top = value * 0 + "px";
   // sky.style.left = value * 1.35 + "px";
-  heading.style.left = value * 1.35 + "px";
+  heading.style.bottom = value * 1.35 + "px";
   mobileHeading.style.bottom = value * 1.3 + "px";
+  button.style.bottom = value * 1.3 + "px";
 });
 
 //3D-CARD
