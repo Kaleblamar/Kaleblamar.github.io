@@ -60,6 +60,7 @@ const listTwo = document.getElementById("listTwo");
 const listThree = document.getElementById("listThree");
 const listFour = document.getElementById("listFour");
 const listFive = document.getElementById("listFive");
+// const hamburgerSpin = document.querySelector(".hamburgerSpinBox");
 
 hamburger.addEventListener("click", function () {
   bar1.classList.toggle("topBarRotate");
@@ -72,6 +73,7 @@ hamburger.addEventListener("click", function () {
   listThree.classList.toggle("menuListSlider3");
   listFour.classList.toggle("menuListSlider4");
   listFive.classList.toggle("menuListSlider5");
+  // hamburgerSpin.classList.toggle("hamburgerSpin");
   // menuList.classList.toggle("menuListSlider");
 });
 
