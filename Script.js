@@ -94,7 +94,6 @@ closeOut.addEventListener("click", function () {
     resume.classList.remove("displayResume");
     resume.classList.remove("fadeOut");
   }
-  // resume.classList.remove("displayResume");
 });
 
 // CONTACT FORM

@@ -1211,6 +1211,16 @@ blockquote {
   justify-content: center;
   transition: 0.3s ease-in-out;
 }
+
+.item11 {
+  background: url(./Images/ToDo.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
 /* ==================================== */
 /* FOOTER */
 /* ==================================== */
