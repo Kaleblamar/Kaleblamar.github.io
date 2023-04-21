@@ -173,6 +173,17 @@
     transform: scale(1);
   }
 }
+.fadeOut {
+  animation: fadeOut 1s ease !important;
+}
+@keyframes fadeOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .formButtonsContainer {
   display: flex;
 }
@@ -252,6 +263,11 @@ legend {
   color: var(--teal);
   font-family: var(--font-family);
 }
+input[type="text"],
+input[type="email"],
+textarea {
+  outline: none;
+}
 
 input[type="submit"],
 input[type="reset"] {
@@ -308,8 +324,6 @@ input[type="reset"]:active {
   height: 5px;
   border-radius: 10px;
   background-color: var(--teal);
-  /* background-image: linear-gradient(-45deg, var(--teal), white); */
-  /* background-blend-mode: multiply; */
   transition: 0.5s ease-in-out;
 }
 #bar2 {
@@ -1180,6 +1194,16 @@ blockquote {
 
 .item9 {
   background: url(./Images/Magic\ 8\ ball.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.item10 {
+  background: url(./Images/PasswordGenerator.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;

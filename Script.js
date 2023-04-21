@@ -49,7 +49,7 @@ function flipCard() {
 card.forEach((card) => card.addEventListener("click", flipCard));
 
 // hamburger menu
-const hamburger = document.querySelectorAll(".hamburgerContainer")[0];
+const hamburger = document.querySelector(".hamburgerContainer");
 const bar1 = document.getElementById("bar1");
 const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
@@ -88,7 +88,13 @@ resumeLink.forEach((resumeLink) =>
   resumeLink.addEventListener("click", showResume)
 );
 closeOut.addEventListener("click", function () {
-  resume.classList.remove("displayResume");
+  resume.classList.add("fadeOut");
+  setTimeout(remove, 1000);
+  function remove() {
+    resume.classList.remove("displayResume");
+    resume.classList.remove("fadeOut");
+  }
+  // resume.classList.remove("displayResume");
 });
 
 // CONTACT FORM
@@ -103,7 +109,12 @@ function showForm() {
 contact.forEach((contact) => contact.addEventListener("click", showForm));
 console.log(showForm);
 x.addEventListener("click", function () {
-  form.classList.remove("showForm");
+  form.classList.add("fadeOut");
+  setTimeout(remove, 1000);
+  function remove() {
+    form.classList.remove("showForm");
+    form.classList.remove("fadeOut");
+  }
 });
 
 //Loading Screen
