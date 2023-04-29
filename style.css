@@ -1203,7 +1203,7 @@ blockquote {
 }
 
 .item10 {
-  background: url(./Images/PasswordGenerator.png);
+  background: url(./Images/PasswordGen.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -1213,12 +1213,24 @@ blockquote {
 }
 
 .item11 {
-  background: url(./Images/ToDo.png);
+  background: url(./Images/ToDo3.png);
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
   flex-direction: column;
   justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.item12 {
+  background: url(./Images/Mew2.png),
+    linear-gradient(to bottom, black, hsl(240, 64%, 30%), black);
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
 }
 /* ==================================== */
