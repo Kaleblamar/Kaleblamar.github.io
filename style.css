@@ -331,11 +331,11 @@ input[type="reset"]:active {
   transition: 0.3s ease-in-out;
 }
 .topBarRotate {
-  transform: rotate(45deg) translate(0, 15px) scale(0.6);
+  transform: rotate(45deg) translate(0, 15px) scale(0.8);
   background-color: var(--pink);
 }
 .bottomBarRotate {
-  transform: rotate(-45deg) translate(0, -15px) scale(0.6);
+  transform: rotate(-45deg) translate(0, -15px) scale(0.8);
   background-color: var(--pink);
 }
 .middleBarSlide {
@@ -1122,10 +1122,12 @@ blockquote {
 }
 
 .item2 {
-  background: url(./Images/Screenshot\ 2023-03-01\ at\ 8.39.22\ PM.png);
+  background: url(./Images/DogRescue2.png),
+    linear-gradient(to bottom, black, hsl(240, 64%, 30%), black);
   background-size: cover;
-  background-position-y: top;
+  background-position-y: center;
   background-position-x: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1223,10 +1225,22 @@ blockquote {
 }
 
 .item12 {
-  background: url(./Images/Mew2.png),
+  background: url(./Images/Mew_2.png),
     linear-gradient(to bottom, black, hsl(240, 64%, 30%), black);
   background-size: contain;
   background-position-y: center;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+
+.item13 {
+  background: url(./Images/weather.png),
+    linear-gradient(to bottom, black, hsl(225, 99%, 47%), black);
+  background-size: contain;
+  background-position-y: top;
   background-position-x: center;
   flex-direction: column;
   justify-content: center;
