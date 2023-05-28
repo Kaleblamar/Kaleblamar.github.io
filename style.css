@@ -1239,9 +1239,21 @@ blockquote {
 .item13 {
   background: url(./Images/weather.png),
     linear-gradient(to bottom, black, hsl(225, 99%, 47%), black);
-  background-size: contain;
+  background-size: cover;
   background-position-y: top;
   background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
+
+.item14 {
+  /* background: url(./Images/Frogger.png),
+    linear-gradient(to bottom, black, hsl(225, 99%, 47%), black);
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: center; */
   flex-direction: column;
   justify-content: center;
   background-repeat: no-repeat;
