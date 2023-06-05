@@ -1153,10 +1153,10 @@ blockquote {
   transition: 0.3s ease-in-out;
 }
 .item5 {
-  background-image: url(./Images/fullpageproject.png);
+  background-image: url(./Images/HandymanScreenshot.png);
   background-size: cover;
-  background-position-y: top;
-  background-position-x: center;
+  background-position-y: center;
+  background-position-x: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1175,14 +1175,18 @@ blockquote {
 }
 
 .item7 {
-  background: url(./Images/TextAdventure.png);
-  background-size: cover;
+  background: url(./Images/HangmanScreenshot.png), 
+  linear-gradient(to bottom, #4c371d, black,#4c371d);
+  background-size: contain;
   background-position-y: center;
-  background-position-x: center;
+  background-position-x: left;
+  background-repeat: no-repeat;  
   flex-direction: column;
   justify-content: center;
   transition: 0.3s ease-in-out;
 }
+
+
 
 .item8 {
   background: url(./Images/Stopwatch.png);
