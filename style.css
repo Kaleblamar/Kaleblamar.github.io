@@ -1263,6 +1263,20 @@ blockquote {
   background-repeat: no-repeat;
   transition: 0.3s ease-in-out;
 }
+
+
+
+.item15 {
+  background: url(./Images/HTML_Email.png),
+    linear-gradient(to bottom, black, hsl(225, 99%, 47%), black);
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: center;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  transition: 0.3s ease-in-out;
+}
 /* ==================================== */
 /* FOOTER */
 /* ==================================== */
